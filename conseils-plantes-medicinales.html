@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plantes médicinales créoles : tout savoir sur les remèdes traditionnels guadeloupéens | Jardiland</title>
+<link rel="icon" type="image/svg+xml" href="images/logo-jardiland.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+/* Article-specific helpers (not duplicated from site.css) */
+.article-meta-bar {
+  display: flex; align-items: center; gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.9rem; color: var(--gray);
+  margin-bottom: 28px;
+}
+.article-meta-bar .pill {
+  display: inline-block;
+  background: rgba(227,82,5,0.1);
+  color: var(--orange);
+  font-family: var(--font-brand);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.article-meta-bar .meta-time {
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.related-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.related-article-card {
+  display: flex; gap: 16px;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+.related-article-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.related-article-card-img {
+  width: 140px; min-height: 120px; flex-shrink: 0; overflow: hidden;
+}
+.related-article-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.related-article-card-body {
+  padding: 16px 16px 16px 0;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.related-article-card-tag {
+  font-family: var(--font-brand);
+  font-size: 0.7rem; font-weight: 700;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.related-article-card-body h3 {
+  font-family: var(--font-brand);
+  font-size: 0.95rem; font-weight: 700;
+  color: var(--dark); line-height: 1.35;
+}
+@media (max-width: 768px) {
+  .related-articles-grid { grid-template-columns: 1fr; }
+  .related-article-card-img { width: 110px; min-height: 100px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header">
+  <div class="nav-inner">
+    <a href="index.html"><img src="images/logo-jardiland.svg" alt="Jardiland Guadeloupe" class="logo"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li class="has-dropdown">
+          <a href="pepiniere.html">Pépinière</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Pépinière</li>
+            <li><a href="pepiniere.html">Vue d'ensemble</a></li>
+            <li><a href="pepiniere-plantes-exterieur.html">Plantes d'extérieur tropicales</a></li>
+            <li><a href="pepiniere-plantes-interieur.html">Plantes d'intérieur</a></li>
+            <li><a href="pepiniere-fruitiers.html">Fruitiers tropicaux</a></li>
+            <li><a href="pepiniere-potager.html">Potager créole & aromatiques</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="animalerie.html">Animalerie</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Animalerie</li>
+            <li><a href="animalerie.html">Vue d'ensemble</a></li>
+            <li><a href="animalerie-chiens-chats.html">Chiens & chats</a></li>
+            <li><a href="animalerie-rongeurs.html">Rongeurs & petits animaux</a></li>
+            <li><a href="animalerie-aquariophilie.html">Aquariophilie</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="outils.html">Outils & Entretien</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Outils & Entretien</li>
+            <li><a href="outils.html">Vue d'ensemble</a></li>
+            <li><a href="outils-jardin.html">Outillage de jardin</a></li>
+            <li><a href="outils-engrais.html">Engrais, terreaux & traitements</a></li>
+            <li><a href="outils-arrosage.html">Arrosage & récupération d'eau</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="plein-air.html">Plein Air & Déco</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Plein Air & Déco</li>
+            <li><a href="plein-air.html">Vue d'ensemble</a></li>
+            <li><a href="plein-air-mobilier.html">Mobilier de jardin</a></li>
+            <li><a href="plein-air-barbecues.html">Barbecues & planchas</a></li>
+            <li><a href="plein-air-piscines.html">Piscines en kit & bassins</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="blog.html">Conseils</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li class="has-dropdown">
+          <a href="magasins.html">Magasins</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Nos magasins</li>
+            <li><a href="magasins.html">Les deux magasins</a></li>
+            <li><a href="magasin-baie-mahault.html">Jardiland Baie-Mahault</a></li>
+            <li><a href="magasin-les-abymes.html">Jardiland Les Abymes</a></li>
+          </ul>
+        </li>
+        <li><a href="services.html" class="nav-cta">Nos services</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('images/article-medicinales.jpg');"></div>
+  <div class="page-hero-content">
+    <span class="page-hero-badge">CONSEILS &gt; PLANTES MÉDICINALES</span>
+    <h1>Plantes médicinales créoles : le guide complet</h1>
+    <p>De l'atoumo au gros thym, redécouvrez le patrimoine vert des Antilles et apprenez à le cultiver chez vous.</p>
+  </div>
+</section>
+
+<!-- ===== BREADCRUMB ===== -->
+<nav class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="index.html">Accueil</a>
+    <span class="sep">/</span>
+    <a href="blog.html">Conseils</a>
+    <span class="sep">/</span>
+    <span class="current">Plantes médicinales créoles</span>
+  </div>
+</nav>
+
+<!-- ===== ARTICLE CONTENT ===== -->
+<section>
+  <div class="container">
+    <div class="content-block reveal">
+
+      <!-- Meta header (reading time + tag pill) -->
+      <div class="article-meta-bar">
+        <span class="pill">Plantes médicinales</span>
+        <span class="meta-time">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          15 min de lecture · Avril 2026
+        </span>
+      </div>
+
+      <p>En Guadeloupe, presque chaque cour, chaque jardin créole abrite quelques plantes que l'on cueille à l'occasion d'un mal de ventre, d'un rhume ou d'une mauvaise digestion. Atoumo, gros thym, citronnelle, bois canon : ces noms résonnent dans la mémoire collective de plusieurs générations. Ils racontent une médecine domestique transmise de bouche à oreille, des grand-mères aux petits-enfants, avec ses gestes simples et son savoir précis.</p>
+      <p>Cette pharmacopée créole est l'héritage d'un brassage culturel unique : savoirs amérindiens des Kalinagos, plantes ramenées d'Afrique pendant la traite, apports indiens et européens, et bien sûr l'observation patiente de la flore locale. Aujourd'hui, alors que l'intérêt pour les approches naturelles n'a jamais été aussi fort, beaucoup redécouvrent ce patrimoine vert tropical avec un regard neuf.</p>
+      <p>Ce guide vous propose un tour d'horizon des plantes médicinales les plus emblématiques de Guadeloupe, avec leurs usages traditionnels et des conseils pratiques pour les cultiver chez vous. Un point de départ pour démarrer votre propre jardin créole médicinal, à deux pas de votre cuisine.</p>
+
+      <h2>Pourquoi cultiver des plantes médicinales créoles chez soi ?</h2>
+      <p>Au-delà du simple plaisir de jardiner, planter ses propres plantes médicinales répond à plusieurs envies fortes. C'est d'abord un geste d'autonomie : avoir sous la main une citronnelle pour une infusion, du gros thym pour calmer une toux ou de l'atoumo après un repas trop copieux, c'est se réapproprier des gestes de soin du quotidien.</p>
+      <p>C'est aussi un acte de transmission. Faire pousser ces plantes avec ses enfants, leur expliquer comment grand-mère préparait telle ou telle décoction, c'est faire vivre une mémoire familiale qui s'effiloche un peu plus chaque année. Et c'est enfin un complément naturel et accessible à une hygiène de vie attentive — sans jamais se substituer à un avis médical en cas de pathologie.</p>
+      <p>Côté plaisir pur, le jardin créole médicinal a un autre atout : il sent bon. Citronnelle, basilic, bois-d'Inde, gros thym : on traverse cet espace en froissant les feuilles entre les doigts, et l'air se charge instantanément d'arômes. Difficile de faire plus thérapeutique, déjà.</p>
+
+      <h2>10 plantes médicinales incontournables en Guadeloupe</h2>
+
+      <h3>Atoumo (Alpinia speciosa)</h3>
+      <p>Surnommé « atoumo » en créole — qui signifie littéralement « à tous maux » —, l'<em>Alpinia speciosa</em> est sans doute la plante médicinale la plus emblématique de la Guadeloupe. Sa feuille longue et brillante, froissée et infusée, donne une boisson aux notes de gingembre, traditionnellement utilisée pour les digestions difficiles, les nausées et les petits troubles intestinaux.</p>
+      <p>L'atoumo aime les sols frais, légèrement humides, et la mi-ombre. Il forme rapidement de belles touffes denses qui stabilisent les talus et fleurissent en grappes blanches discrètes. Une plante généreuse, qui se divise facilement pour étendre la collection.</p>
+
+      <h3>Gros thym (Plectranthus amboinicus)</h3>
+      <p>Le gros thym n'a de thym que le nom : c'est en réalité une grande lamiacée à feuilles charnues et duveteuses, à l'arôme puissant entre origan, thym et menthe. En cuisine, il accompagne admirablement les courts-bouillons, les marinades et les viandes. En usage médicinal, c'est l'allié des refroidissements : infusion ou sirop maison adoucissent toux et maux de gorge.</p>
+      <p>Très facile à cultiver, le gros thym apprécie le plein soleil et un sol drainé. Il déteste l'excès d'eau. Une bouture suffit à le multiplier : on prélève une tige, on la plante, et trois semaines plus tard la plante est repartie.</p>
+
+      <h3>Bois canon (Cecropia peltata)</h3>
+      <p>Arbre pionnier des friches et lisières, le bois canon est reconnaissable à ses grandes feuilles palmées blanches en dessous. Ses feuilles séchées, infusées, sont traditionnellement utilisées comme diurétique doux et tonique cardiaque dans la médecine populaire antillaise.</p>
+      <p>Le bois canon pousse très vite et se ressème seul dans les jardins un peu sauvages. À garder en bordure de propriété ou dans une zone que l'on souhaite reboiser rapidement, plutôt qu'au cœur d'un petit jardin où il deviendra rapidement encombrant.</p>
+
+      <h3>Corossolier (Annona muricata)</h3>
+      <p>Le corossolier est précieux à double titre : son fruit, le corossol, est un délice tropical aux usages culinaires multiples ; ses feuilles, infusées, ont une réputation traditionnelle calmante et favorisent le sommeil. La pharmacopée créole en fait un classique des fins de journée chargées.</p>
+      <p>Petit arbre à privilégier dans les zones abritées du vent, le corossolier apprécie un sol profond et bien drainé. Il commence à fructifier dès la deuxième ou troisième année après plantation, ce qui en fait un excellent candidat pour un verger familial.</p>
+
+      <h3>Citronnelle (Cymbopogon citratus)</h3>
+      <p>Présente dans presque tous les jardins créoles, la citronnelle joue un double rôle : son parfum citronné éloigne efficacement les moustiques quand on la froisse au passage, et ses tiges, infusées, donnent une boisson digestive délicate. C'est un remède classique des petits maux d'estomac de l'enfance.</p>
+      <p>La citronnelle aime le plein soleil, un sol meuble et arrosé. Elle forme de belles touffes denses qu'on divise tous les deux ou trois ans pour les rajeunir. Plantez-en plusieurs pieds : on en récolte vite plus qu'on ne croit.</p>
+
+      <h3>Persil-pays (Eryngium foetidum)</h3>
+      <p>Indispensable de la cuisine créole, le persil-pays — aussi appelé chadon béni ou recao — est une plante basse aux feuilles dentelées au parfum puissant. Au-delà de son rôle aromatique majeur dans les colombos, accras et marinades, il est traditionnellement utilisé pour faciliter la digestion.</p>
+      <p>Plante peu exigeante, le persil-pays préfère la mi-ombre et un sol toujours frais. Il se ressème naturellement, ce qui assure une présence continue au jardin une fois bien installé. Récoltez les feuilles régulièrement pour stimuler la pousse.</p>
+
+      <h3>Ti-bonm (Ocimum)</h3>
+      <p>Le ti-bonm regroupe plusieurs basilics tropicaux à feuilles fines et arôme puissant, parfois clouté de notes de clou de girofle. Au-delà de l'usage culinaire, ses feuilles sont traditionnellement réputées pour leurs propriétés antiseptiques et calmantes, en infusion légère.</p>
+      <p>Comme tous les basilics, le ti-bonm aime le soleil et la chaleur. Pincez régulièrement les sommités fleuries pour prolonger la production de feuilles. Il se sème facilement et c'est l'une des plantes les plus gratifiantes pour démarrer un jardin médicinal.</p>
+
+      <h3>Bois-d'Inde (Pimenta racemosa)</h3>
+      <p>Arbre majestueux des forêts antillaises, le bois-d'Inde est reconnaissable à l'odeur poivrée et aux notes de clou de girofle qui s'échappent de ses feuilles froissées. Les feuilles aromatisent les courts-bouillons et le boudin créole ; en usage externe, l'huile essentielle de bois-d'Inde est traditionnellement utilisée en friction pour soulager les douleurs musculaires.</p>
+      <p>À planter dans un jardin assez grand : c'est un arbre qui peut atteindre 10 à 12 mètres. Préférez un emplacement ensoleillé et un sol drainé. Une fois installé, il demande très peu d'entretien.</p>
+
+      <h3>Mauve (Malvaviscus arboreus)</h3>
+      <p>La mauve antillaise, ou « pavé », est un arbuste à fleurs rouges en clochettes très décoratif. Ses fleurs et ses feuilles, en décoction, sont traditionnellement utilisées pour leurs vertus adoucissantes et anti-inflammatoires, notamment sur les irritations cutanées et les petits maux de gorge.</p>
+      <p>Plante facile, qui apprécie le soleil et tolère un peu de sécheresse une fois installée. Elle fleurit presque toute l'année et attire les colibris : un atout esthétique en plus.</p>
+
+      <h3>Curcuma (Curcuma longa)</h3>
+      <p>Largement diffusé en Guadeloupe, le curcuma combine usages culinaires et propriétés médicinales reconnues. Le rhizome frais ou séché est utilisé pour ses propriétés anti-inflammatoires et son rôle de soutien hépatique en médecine populaire. C'est aussi l'épice qui colore le riz et de nombreux plats antillais.</p>
+      <p>Le curcuma se cultive comme les autres rhizomes tropicaux : sol meuble, riche, mi-ombre, arrosages réguliers en hivernage. La récolte se fait en saison sèche, environ neuf mois après la plantation, quand le feuillage commence à jaunir.</p>
+
+      <h2>Cultiver son jardin créole médicinal : conseils pratiques</h2>
+
+      <h3>Choisir l'emplacement</h3>
+      <p>Le premier réflexe est d'installer ces plantes au plus près de la cuisine. Quand on cuisine ou que l'on prépare une infusion, on a peu envie de traverser tout le jardin pour cueillir trois feuilles. Une jardinière de citronnelle, de gros thym et de persil-pays à deux pas de la porte arrière : c'est déjà un petit jardin médicinal complet.</p>
+      <p>Mélangez les expositions : la citronnelle, le ti-bonm et le gros thym aiment le plein soleil ; l'atoumo, le persil-pays et le curcuma préfèrent la mi-ombre. En jouant avec votre topographie et vos zones ombragées, vous offrez à chaque espèce les conditions qu'elle réclame.</p>
+
+      <h3>Préparer le sol</h3>
+      <p>La plupart des plantes médicinales créoles se développent dans un sol bien drainé, enrichi en matière organique. Avant plantation, ameublissez la terre sur 30 à 40 cm, incorporez du compost mûr (un seau pour un mètre carré) et, en sol lourd, ajoutez du sable grossier ou de la pouzzolane pour améliorer le drainage.</p>
+      <p>Une fois les plantes en place, paillez généreusement avec de la bagasse, des feuilles mortes ou un mulch coco. Ce paillage limite le désherbage, conserve l'humidité en carême et nourrit progressivement le sol en se décomposant.</p>
+
+      <h3>Récolter au bon moment</h3>
+      <p>Le moment de la récolte influence la qualité aromatique et médicinale des plantes. Pour les feuilles aromatiques (citronnelle, gros thym, ti-bonm, persil-pays), privilégiez la cueillette tôt le matin, après l'évaporation de la rosée mais avant les fortes chaleurs : c'est à ce moment que les huiles essentielles sont à leur concentration maximale.</p>
+      <p>Pour les rhizomes (curcuma, gingembre), attendez que le feuillage jaunisse en fin de cycle, signe que la plante a transféré toutes ses réserves dans la racine. Pour les écorces et les fleurs, suivez les indications spécifiques à chaque espèce — votre conseiller en magasin peut vous orienter.</p>
+
+      <div class="tip-box">
+        <span class="tip-box-label">Le conseil important</span>
+        <p>La connaissance des plantes médicinales créoles est un patrimoine précieux. Mais ce n'est pas un substitut à un avis médical. En cas de doute ou de pathologie, consultez toujours un professionnel de santé.</p>
+      </div>
+
+      <h2>Préserver le savoir : un patrimoine à transmettre</h2>
+      <p>La transmission orale, longtemps dominante, s'est érodée avec l'urbanisation et l'éloignement progressif des modes de vie traditionnels. Beaucoup de gestes et de recettes risquent aujourd'hui de se perdre si rien n'est fait pour les documenter et les partager. Heureusement, des associations locales, des herboristes, des chercheurs et de simples amateurs se mobilisent pour collecter et transmettre ce savoir.</p>
+      <p>Si vous avez la chance d'avoir des aînés autour de vous qui connaissent ces plantes, profitez-en. Un carnet, quelques photos, des questions simples : « Comment tu prépares ça ? À quel moment tu le cueilles ? » suffisent souvent à faire ressurgir une foule de précisions précieuses. Ce sont ces échanges, plus que les livres, qui maintiennent le savoir vivant.</p>
+
+      <h2>Démarrer votre jardin médicinal avec Jardiland</h2>
+      <p>Cultiver les plantes médicinales créoles, c'est un petit projet qui rend gros. Quelques mètres carrés bien pensés, choisis avec soin et entretenus régulièrement, suffisent à transformer votre rapport quotidien au jardin et à la cuisine. Et c'est aussi, ne l'oublions pas, un magnifique cadeau à transmettre aux plus jeunes.</p>
+      <p>Chez Jardiland Guadeloupe, nous sélectionnons régulièrement des plants d'atoumo, de gros thym, de citronnelle, de ti-bonm, de curcuma et bien d'autres avec des pépiniéristes locaux. Passez en magasin : nos conseillers vous aideront à composer votre premier carré médicinal en fonction de votre exposition et de votre niveau d'expérience.</p>
+
+    </div>
+
+    <!-- Related articles -->
+    <div class="related-articles-grid reveal" style="margin-top: 64px;">
+      <a href="article-arbres-fruitiers.html" class="related-article-card">
+        <div class="related-article-card-img">
+          <img src="images/pep-fruitiers.jpg" alt="Plantation d'arbres fruitiers">
+        </div>
+        <div class="related-article-card-body">
+          <span class="related-article-card-tag">Pépinière</span>
+          <h3>Plantation d'arbres fruitiers</h3>
+        </div>
+      </a>
+      <a href="article-potager-creole.html" class="related-article-card">
+        <div class="related-article-card-img">
+          <img src="images/pep-potager.jpg" alt="Démarrer un potager créole">
+        </div>
+        <div class="related-article-card-body">
+          <span class="related-article-card-tag">Potager</span>
+          <h3>Démarrer un potager créole</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section reveal">
+  <div class="cta-inner">
+    <h2>Démarrons votre jardin médicinal</h2>
+    <p>Atoumo, gros thym, citronnelle... nous sélectionnons les plantes médicinales en magasin avec leurs guides d'usage. Passez en parler avec nos conseillers.</p>
+    <a href="magasins.html" class="btn btn-white">Voir nos magasins</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col footer-logo-block">
+      <img src="images/logo-jardiland.svg" alt="Jardiland Guadeloupe" class="footer-logo">
+      <p class="footer-tagline">Spécialiste de la jardinerie, de l'animalerie et de l'aménagement extérieur en Guadeloupe depuis plus de 20 ans.</p>
+      <div class="footer-social" style="margin-top:18px;">
+        <a href="https://facebook.com/jardiland.guadeloupe" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://instagram.com/jardiland_guadeloupe" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Univers</h4>
+      <ul>
+        <li><a href="pepiniere.html">Pépinière</a></li>
+        <li><a href="animalerie.html">Animalerie</a></li>
+        <li><a href="outils.html">Outils & Entretien</a></li>
+        <li><a href="plein-air.html">Plein Air & Déco</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Jardiland</h4>
+      <ul>
+        <li><a href="magasins.html">Nos magasins</a></li>
+        <li><a href="services.html">Nos services</a></li>
+        <li><a href="catalogue.html">Catalogue & promos</a></li>
+        <li><a href="blog.html">Conseils & blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informations</h4>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">CGV</a></li>
+        <li><a href="#">À propos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-text">&copy; 2026 Jardiland Guadeloupe — Tous droits réservés · Création du site : <a href="https://katchak-agency.fr" target="_blank">Katchak Digital Agency</a></p>
+  </div>
+</footer>
+
+<!-- ===== SHARED JS ===== -->
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const header = document.getElementById('header');
+if (header) window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40));
+
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('.has-dropdown > a').forEach(a => {
+    a.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        a.parentElement.classList.toggle('open');
+      }
+    });
+  });
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>

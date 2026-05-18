@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local Claude tooling
+.claude/
+
+# Logs
+*.log
+
+# Build artifacts
+.vercel/
+.next/
+node_modules/
+
+# Archives (we keep source files, not zip exports)
+*.zip

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quand et comment planter vos arbres fruitiers en Guadeloupe ? — Jardiland Guadeloupe</title>
+<link rel="icon" type="image/svg+xml" href="images/logo-jardiland.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============ FONTS ============ */
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Regular Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Shelby';
+  src: url('fonts/Shelby-W05-Bold.ttf') format('truetype'),
+       url('fonts/Shelby-W05-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============ VARIABLES ============ */
+:root {
+  --orange: #E35205;
+  --orange-dark: #c44600;
+  --orange-light: #ff6a1a;
+  --white: #ffffff;
+  --offwhite: #faf9f7;
+  --cream: #f3efe8;
+  --dark: #1a1a1a;
+  --dark-soft: #2d2d2d;
+  --gray: #5a5a5a;
+  --gray-light: #9a9a9a;
+  --green: #3d7c47;
+  --green-dark: #2a5a32;
+  --green-light: #6aad6a;
+  --green-soft: #e8f5e9;
+  --gold: #eec53a;
+  --font-brand: 'Jardiland', 'Inter', sans-serif;
+  --font-body: 'Inter', 'Jardiland', sans-serif;
+  --font-script: 'Shelby', cursive;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.08);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.12);
+  --transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ============ RESET ============ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-body);
+  color: var(--dark);
+  background: var(--offwhite);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ============ HEADER ============ */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s;
+}
+header.scrolled {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+}
+.logo { height: 44px; transition: var(--transition); }
+.logo:hover { transform: scale(1.03); }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.nav-links a {
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--orange); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--orange); }
+.nav-links a.active::after { width: 100%; }
+.nav-cta {
+  background: var(--orange);
+  color: var(--white) !important;
+  padding: 10px 22px !important;
+  border-radius: 50px;
+  font-weight: 700 !important;
+  transition: all 0.3s !important;
+}
+.nav-cta::after { display: none !important; }
+.nav-cta:hover {
+  background: var(--orange-dark) !important;
+  color: var(--white) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(227,82,5,0.3);
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--dark);
+  border-radius: 2px;
+  transition: all 0.3s;
+  position: absolute;
+  left: 4px;
+}
+.menu-toggle span:nth-child(1) { top: 8px; }
+.menu-toggle span:nth-child(2) { top: 15px; }
+.menu-toggle span:nth-child(3) { top: 22px; }
+.menu-toggle.active span:nth-child(1) { top: 15px; transform: rotate(45deg); }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { top: 15px; transform: rotate(-45deg); }
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 32px;
+  border-radius: 50px;
+  font-family: var(--font-brand);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  letter-spacing: 0.01em;
+}
+.btn-primary {
+  background: var(--orange);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--orange-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(227,82,5,0.35);
+}
+.btn-outline-dark {
+  background: transparent;
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+.btn-outline-dark:hover {
+  background: var(--dark);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+.btn-sm { padding: 10px 22px; font-size: 0.85rem; }
+
+/* ============ SCROLL REVEAL ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+
+/* ============ ARTICLE LAYOUT ============ */
+.article-wrapper {
+  margin-top: 72px;
+  padding: 40px 24px 100px;
+}
+.article-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--gray-light);
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.breadcrumb a {
+  color: var(--gray);
+  transition: color 0.3s;
+}
+.breadcrumb a:hover { color: var(--orange); }
+.breadcrumb .sep { color: var(--gray-light); }
+.breadcrumb .current { color: var(--dark); font-weight: 500; }
+
+/* Article header */
+.article-tag {
+  display: inline-block;
+  background: rgba(227,82,5,0.1);
+  color: var(--orange);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+.article-header h1 {
+  font-family: var(--font-brand);
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  font-weight: 900;
+  color: var(--dark);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.88rem;
+  color: var(--gray);
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.article-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hero image */
+.article-hero-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: 48px;
+}
+
+/* Article body typography */
+.article-body h2 {
+  font-family: var(--font-brand);
+  font-size: 1.55rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-top: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.article-body h3 {
+  font-family: var(--font-brand);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-top: 32px;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+.article-body p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+.article-body strong {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+/* Unordered lists */
+.article-body ul {
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+.article-body ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--gray);
+}
+.article-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+/* Ordered lists */
+.article-body ol {
+  margin-bottom: 24px;
+  padding-left: 0;
+  counter-reset: ol-counter;
+}
+.article-body ol li {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--gray);
+  counter-increment: ol-counter;
+  list-style: none;
+}
+.article-body ol li::before {
+  content: counter(ol-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-brand);
+  font-weight: 900;
+  color: var(--orange);
+  font-size: 1.05rem;
+}
+
+/* Tip callout */
+.tip-box {
+  background: var(--cream);
+  border-left: 4px solid var(--orange);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+}
+.tip-box-label {
+  font-family: var(--font-brand);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--orange);
+  margin-bottom: 8px;
+  display: block;
+}
+.tip-box p {
+  font-style: italic;
+  color: var(--gray);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* Back button */
+.article-back {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ============ RELATED ARTICLES ============ */
+.related-section {
+  margin-top: 64px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.related-section h2 {
+  font-family: var(--font-brand);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 28px;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.related-card {
+  display: flex;
+  gap: 16px;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.related-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.related-card-img {
+  width: 140px;
+  min-height: 120px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.related-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.related-card-body {
+  padding: 16px 16px 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.related-card-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.related-card-body h3 {
+  font-family: var(--font-brand);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.35;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: var(--dark);
+  padding: 48px 24px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-logo { height: 36px; filter: brightness(0) invert(1); opacity: 0.7; }
+.footer-text {
+  color: rgba(255,255,255,0.45);
+  font-size: 0.82rem;
+}
+.footer-text a { color: var(--orange); transition: color 0.3s; }
+.footer-text a:hover { color: var(--orange-light); }
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+.footer-links a {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.82rem;
+  transition: color 0.3s;
+}
+.footer-links a:hover { color: var(--white); }
+
+
+/* ============ MEGA-MENU DROPDOWN OVERRIDES ============ */
+.nav-links { gap: 4px !important; }
+.nav-links > li { position: relative; }
+.nav-links > li > a {
+  display: block;
+  padding: 10px 12px !important;
+  border-radius: 8px;
+  font-size: 0.85rem !important;
+}
+.nav-links > li > a::after { display: none !important; }
+.nav-links > li > a:hover { background: rgba(227,82,5,0.06); }
+.nav-links > li.has-dropdown > a::after {
+  content: '▾' !important;
+  display: inline !important;
+  position: static !important;
+  background: none !important;
+  width: auto !important; height: auto !important;
+  margin-left: 6px;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+.dropdown {
+  position: absolute; top: calc(100% + 8px); left: 0;
+  list-style: none;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 12px;
+  min-width: 260px;
+  opacity: 0; visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.nav-links > li:hover > .dropdown,
+.nav-links > li:focus-within > .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+.dropdown li { margin: 0; }
+.dropdown li a {
+  display: block !important;
+  padding: 10px 14px !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+  border-radius: 8px;
+  color: var(--dark) !important;
+  transition: all 0.2s;
+}
+.dropdown li a::after { display: none !important; }
+.dropdown li a:hover { background: var(--cream); color: var(--orange) !important; padding-left: 18px !important; }
+.dropdown li.dropdown-title {
+  padding: 8px 14px 4px;
+  font-family: var(--font-brand); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--orange);
+}
+@media (max-width: 1100px) {
+  .nav-links > li > a { padding: 10px 8px !important; font-size: 0.8rem !important; }
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 1rem; }
+  .nav-links { gap: 0 !important; align-items: stretch; max-height: calc(100vh - 72px); overflow-y: auto; padding: 16px !important; }
+  .nav-links > li { width: 100%; }
+  .nav-links > li > a { padding: 14px 16px !important; border-bottom: 1px solid rgba(0,0,0,0.06); border-radius: 0 !important; font-size: 0.95rem !important; }
+  .dropdown { position: static !important; opacity: 1 !important; visibility: visible !important; transform: none !important; box-shadow: none !important; background: var(--cream) !important; padding: 8px !important; margin: 0 0 8px 0; border: none !important; border-radius: 0 !important; display: none; }
+  .nav-links > li.has-dropdown.open .dropdown { display: block; }
+  .nav-links > li.has-dropdown > a::after { transition: transform 0.3s; }
+  .nav-links > li.has-dropdown.open > a::after { transform: rotate(180deg); }
+
+  .article-wrapper { padding: 24px 16px 64px; }
+  .article-header h1 { font-size: 1.6rem; }
+  .article-hero-img { border-radius: var(--radius); max-height: 300px; }
+  .article-body h2 { font-size: 1.3rem; margin-top: 36px; }
+  .related-grid { grid-template-columns: 1fr; }
+  .related-card-img { width: 110px; min-height: 100px; }
+
+  .footer-inner { flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header id="header" class="site-header">
+  <div class="nav-inner">
+    <a href="index.html"><img src="images/logo-jardiland.svg" alt="Jardiland Guadeloupe" class="logo"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li class="has-dropdown">
+          <a href="pepiniere.html">Pépinière</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Pépinière</li>
+            <li><a href="pepiniere.html">Vue d'ensemble</a></li>
+            <li><a href="pepiniere-plantes-exterieur.html">Plantes d'extérieur tropicales</a></li>
+            <li><a href="pepiniere-plantes-interieur.html">Plantes d'intérieur</a></li>
+            <li><a href="pepiniere-fruitiers.html">Fruitiers tropicaux</a></li>
+            <li><a href="pepiniere-potager.html">Potager créole &amp; aromatiques</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="animalerie.html">Animalerie</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Animalerie</li>
+            <li><a href="animalerie.html">Vue d'ensemble</a></li>
+            <li><a href="animalerie-chiens-chats.html">Chiens &amp; chats</a></li>
+            <li><a href="animalerie-rongeurs.html">Rongeurs &amp; petits animaux</a></li>
+            <li><a href="animalerie-aquariophilie.html">Aquariophilie</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="outils.html">Outils &amp; Entretien</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Outils &amp; Entretien</li>
+            <li><a href="outils.html">Vue d'ensemble</a></li>
+            <li><a href="outils-jardin.html">Outillage de jardin</a></li>
+            <li><a href="outils-engrais.html">Engrais, terreaux &amp; traitements</a></li>
+            <li><a href="outils-arrosage.html">Arrosage &amp; récupération d'eau</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="plein-air.html">Plein Air &amp; Déco</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Plein Air &amp; Déco</li>
+            <li><a href="plein-air.html">Vue d'ensemble</a></li>
+            <li><a href="plein-air-mobilier.html">Mobilier de jardin</a></li>
+            <li><a href="plein-air-barbecues.html">Barbecues &amp; planchas</a></li>
+            <li><a href="plein-air-piscines.html">Piscines en kit &amp; bassins</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="blog.html">Conseils</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li class="has-dropdown">
+          <a href="magasins.html">Magasins</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Nos magasins</li>
+            <li><a href="magasins.html">Les deux magasins</a></li>
+            <li><a href="magasin-baie-mahault.html">Jardiland Baie-Mahault</a></li>
+            <li><a href="magasin-les-abymes.html">Jardiland Les Abymes</a></li>
+          </ul>
+        </li>
+        <li><a href="services.html" class="nav-cta">Nos services</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== ARTICLE ========== -->
+<div class="article-wrapper">
+  <article class="article-container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span class="sep">&rsaquo;</span>
+      <a href="blog.html">Blog</a>
+      <span class="sep">&rsaquo;</span>
+      <span class="current">Quand et comment planter vos arbres fruitiers en Guadeloupe ?</span>
+    </nav>
+
+    <!-- Article header -->
+    <div class="article-header">
+      <span class="article-tag">Pépinière</span>
+      <h1>Quand et comment planter vos arbres fruitiers en Guadeloupe ?</h1>
+      <div class="article-meta">
+        <span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          12 min de lecture
+        </span>
+        <span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Avril 2026
+        </span>
+      </div>
+    </div>
+
+    <!-- Hero image -->
+    <img src="images/conseil-plantes.jpg" alt="Planter des arbres fruitiers en Guadeloupe" class="article-hero-img">
+
+    <!-- Article body -->
+    <div class="article-body">
+
+      <p>En Guadeloupe, planter un arbre fruitier ne se resume pas a creuser un trou et a arroser. Le climat tropical, les sols varies et le rythme des saisons imposent quelques regles simples pour mettre toutes les chances de votre cote. Voici le guide complet de nos experts pour reussir votre plantation, du choix de l'espece aux premiers soins apres mise en terre.</p>
+
+      <h2>Pourquoi la periode de plantation est determinante</h2>
+      <p>Sous les tropiques, on a parfois l'impression qu'on peut tout planter toute l'annee. C'est a la fois vrai et trompeur. Vrai, parce que nos temperatures douces permettent a la vegetation de se developper en continu. Trompeur, parce que l'alternance entre careme (saison seche) et hivernage (saison des pluies) change radicalement les conditions dans lesquelles un jeune arbre va s'enraciner.</p>
+      <p>Un arbre fruitier plante au mauvais moment subit un stress hydrique ou un exces d'eau qui peut compromettre sa reprise, voire entrainer sa mort. A l'inverse, une plantation bien calee sur la saison demarre vite, s'enracine profondement et entre plus tot en production.</p>
+
+      <h2>La bonne periode : privilegier le debut de l'hivernage</h2>
+      <p>En Guadeloupe, la periode ideale pour planter la majorite des arbres fruitiers se situe entre juin et octobre, au debut et pendant l'hivernage. Les pluies regulieres permettent a l'arbre de s'installer sans arrosage intensif et de developper son systeme racinaire avant la saison seche suivante.</p>
+
+      <h3>Les reperes mois par mois</h3>
+      <ul>
+        <li><strong>Juin a aout :</strong> fenetre optimale pour les agrumes, manguiers, corossoliers et avocatiers.</li>
+        <li><strong>Septembre a octobre :</strong> ideal pour les goyaviers, caramboliers et arbres a pain, qui apprecient une mise en terre juste avant les dernieres pluies.</li>
+        <li><strong>Novembre a mai (careme) :</strong> plantation possible uniquement si vous pouvez garantir un arrosage regulier, ou pour des sujets deja bien developpes en conteneur.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="tip-box-label">Le conseil de nos pépiniéristes</span>
+        <p>Evitez de planter pendant les episodes caniculaires de mars a mai. Meme avec un arrosage soutenu, le jeune plant transpire plus qu'il n'absorbe et met beaucoup plus de temps a demarrer.</p>
+      </div>
+
+      <h2>Bien choisir son arbre : adapter l'espece au terrain</h2>
+      <p>Avant meme de parler technique de plantation, la reussite se joue au moment de l'achat. La Guadeloupe offre une diversite de microclimats impressionnante : cote sous le vent plus seche, Basse-Terre humide et fraiche en altitude, Grande-Terre calcaire et venteuse. Chaque arbre a ses preferences.</p>
+
+      <h3>Les valeurs sures pour demarrer un verger creole</h3>
+      <ul>
+        <li><strong>Manguier greffe (Julie, Amelie) :</strong> s'adapte a la plupart des sols, production rapide en 3 a 4 ans.</li>
+        <li><strong>Corossolier :</strong> apprecie les zones abritees du vent, fructifie des la deuxieme annee.</li>
+        <li><strong>Citronnier vert et oranger :</strong> parfaits en Grande-Terre, tolerent les sols calcaires.</li>
+        <li><strong>Avocatier :</strong> ideal en Basse-Terre sur sols profonds et bien draines.</li>
+        <li><strong>Carambolier, goyavier, arbre a pain :</strong> polyvalents, excellents compagnons dans un verger familial.</li>
+      </ul>
+      <p>Chez Jardiland Guadeloupe, nos arbres fruitiers sont selectionnes avec des pépiniéristes locaux et eleves sous notre climat, ce qui leur assure une acclimatation optimale une fois chez vous.</p>
+
+      <h2>Preparer le terrain : la base de tout</h2>
+
+      <h3>Choisir l'emplacement</h3>
+      <p>Un arbre fruitier reste en place plusieurs decennies. Prenez le temps de visualiser son developpement adulte : hauteur, envergure, ombre portee sur la maison ou les cultures voisines. Eloignez-le d'au moins 4 a 5 metres des murs et des fosses septiques.</p>
+      <p>Orientez-le de maniere a ce qu'il beneficie d'au moins 6 heures de soleil par jour, tout en etant protege des vents dominants — particulierement important en Grande-Terre ou les alizes peuvent dessecher les jeunes plants.</p>
+
+      <h3>Creuser un trou digne de ce nom</h3>
+      <p>C'est l'etape ou beaucoup font l'economie qui coute cher. Le trou de plantation doit faire au minimum deux a trois fois le volume de la motte : comptez 60 a 80 cm de cote et de profondeur pour la plupart des fruitiers.</p>
+      <ul>
+        <li>Decompactez le fond du trou sur 20 cm supplementaires a la fourche-beche.</li>
+        <li>Melangez la terre extraite avec du compost bien mur (1/3 de compost pour 2/3 de terre) et une poignee de corne broyee.</li>
+        <li>Si votre sol est lourd ou argileux, ajoutez du sable grossier ou du gravier au fond pour assurer le drainage.</li>
+      </ul>
+
+      <h2>La plantation, etape par etape</h2>
+      <p>Plantez de preference en fin d'apres-midi, quand le soleil tape moins fort. L'arbre aura la nuit pour recuperer avant sa premiere journee en pleine terre.</p>
+      <ol>
+        <li><strong>Preparer la motte :</strong> baignez le conteneur dans un seau d'eau pendant 15 minutes pour bien imbiber les racines.</li>
+        <li><strong>Positionner l'arbre :</strong> le collet (jonction entre les racines et le tronc) doit affleurer le niveau du sol, jamais etre enterre.</li>
+        <li><strong>Combler le trou :</strong> avec le melange terre-compost, en tassant delicatement au fur et a mesure pour eliminer les poches d'air.</li>
+        <li><strong>Former une cuvette :</strong> creez une rigole circulaire autour du tronc pour retenir l'eau d'arrosage.</li>
+        <li><strong>Arroser copieusement :</strong> 20 a 30 litres d'eau, meme s'il pleut, pour plaquer la terre autour des racines.</li>
+        <li><strong>Tuteurer si necessaire :</strong> indispensable dans les zones ventees, avec un tuteur solide plante cote alizes.</li>
+      </ol>
+
+      <h2>Les soins des premieres semaines</h2>
+      <p>Les 4 a 6 premieres semaines sont decisives. L'arbre mobilise toute son energie a reconstituer son systeme racinaire. C'est aussi la periode ou il est le plus vulnerable a la secheresse, aux attaques d'insectes et aux maladies cryptogamiques.</p>
+
+      <h3>Arrosage et paillage</h3>
+      <p>En saison seche, arrosez 2 a 3 fois par semaine avec 15 a 20 litres d'eau. En hivernage, laissez faire la pluie et n'intervenez qu'en cas de secheresse prolongee. Installez un paillage epais (10 cm de feuilles mortes, bagasse ou tontes de gazon sechees) sur toute la surface de la cuvette : il limite l'evaporation, regule la temperature du sol et nourrit progressivement l'arbre.</p>
+
+      <h3>Surveillance et protection</h3>
+      <p>Inspectez regulierement le feuillage pour reperer cochenilles, pucerons ou premiers symptomes de maladie. Un traitement preventif au savon noir dilue en prevention est souvent suffisant les premieres semaines. Evitez toute fertilisation minerale pendant les deux premiers mois : les racines ne sont pas encore pretes a l'assimiler et vous risqueriez de les bruler.</p>
+
+      <div class="tip-box">
+        <span class="tip-box-label">Le conseil de nos pépiniéristes</span>
+        <p>Plantez un legume-feuille (epinard des Antilles, roquette) au pied de votre jeune arbre. Il ombrage le sol, attire les auxiliaires et vous donne une recolte rapide pendant que l'arbre s'installe.</p>
+      </div>
+
+      <h2>On vous accompagne dans votre projet</h2>
+      <p>Planter un arbre fruitier, c'est un geste qui traverse les generations. Chez Jardiland Guadeloupe, nos equipes sont la pour vous guider dans le choix des varietes, des porte-greffes et du materiel adapte a votre terrain. Passez en magasin avec une photo de votre parcelle et quelques infos sur votre sol : on fait le point ensemble et on vous prepare un plan de plantation qui tient la route.</p>
+      <p>Envie d'aller plus loin ? Decouvrez notre selection d'arbres fruitiers en pépinière et nos conseils saisonniers en magasin ou sur jardiland.gp.</p>
+
+      <!-- Back button -->
+      <div class="article-back">
+        <a href="blog.html" class="btn btn-outline-dark btn-sm">&larr; Retour au blog</a>
+      </div>
+    </div>
+
+    <!-- Related articles -->
+    <div class="related-section">
+      <h2>Articles qui pourraient vous interesser</h2>
+      <div class="related-grid">
+        <a href="article-plantes-secheresse.html" class="related-card">
+          <div class="related-card-img">
+            <img src="images/jardin-exterieur.jpg" alt="Plantes resistantes a la secheresse">
+          </div>
+          <div class="related-card-body">
+            <span class="related-card-tag">Sécheresse</span>
+            <h3>5 plantes resistantes a la secheresse</h3>
+          </div>
+        </a>
+        <a href="article-potager-creole.html" class="related-card">
+          <div class="related-card-img">
+            <img src="images/pepiniere.jpg" alt="Potager creole">
+          </div>
+          <div class="related-card-body">
+            <span class="related-card-tag">Potager</span>
+            <h3>Creer un potager creole : par ou commencer ?</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </article>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-inner">
+    <img src="images/logo-jardiland.svg" alt="Jardiland" class="footer-logo">
+    <div class="footer-links">
+      <a href="#">Mentions legales</a>
+      <a href="#">Politique de confidentialite</a>
+      <a href="#">CGV</a>
+    </div>
+    <p class="footer-text">&copy; 2026 Jardiland Guadeloupe — Tous droits reserves &middot; Creation du site : <a href="https://katchak-agency.fr" target="_blank">Katchak Digital Agency</a></p>
+  </div>
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Header scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Mobile menu
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+// Mobile dropdown toggle
+navLinks.querySelectorAll('.has-dropdown > a').forEach(a => {
+  a.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      a.parentElement.classList.toggle('open');
+    }
+  });
+});
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>

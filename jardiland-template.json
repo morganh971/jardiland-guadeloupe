@@ -1,0 +1,1687 @@
+{
+  "content": [
+    {
+      "id": "jrd_hero",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": {
+          "unit": "px",
+          "size": 1200
+        },
+        "height": "min-height",
+        "custom_height": {
+          "unit": "vh",
+          "size": 90
+        },
+        "column_position": "middle",
+        "background_background": "classic",
+        "background_image": {
+          "url": "",
+          "id": ""
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "rgba(26,26,26,0.55)",
+        "background_overlay_color_b": "rgba(227,82,5,0.15)",
+        "background_overlay_gradient_angle": {
+          "unit": "deg",
+          "size": 135
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_hero_col",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "jrd_hero_badge",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-block;background:rgba(255,255,255,0.15);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.25);border-radius:50px;padding:8px 20px;color:#ffffff;font-size:0.85rem;font-weight:600;letter-spacing:0.03em;\">Jardinerie & Animalerie en Guadeloupe</span>",
+                "align": "left",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_element_width": "initial",
+                "_animation": "fadeInUp"
+              }
+            },
+            {
+              "id": "jrd_hero_h1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Votre jardin tropical <span style=\"color:#ff6a1a\">commence ici.</span>",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 64
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "900",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.08
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.5
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "20",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 700
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 200
+              }
+            },
+            {
+              "id": "jrd_hero_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Plantes, animalerie, conseils d'experts et savoir-faire local au cœur de la Guadeloupe. Bien plus qu'un magasin.",
+                "align": "left",
+                "text_color": "rgba(255,255,255,0.88)",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.7
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "36",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "px",
+                  "size": 520
+                },
+                "_animation": "fadeInUp",
+                "_animation_delay": 400
+              }
+            },
+            {
+              "id": "jrd_hero_buttons",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Nos univers",
+                "link": {
+                  "url": "#univers",
+                  "is_external": false,
+                  "nofollow": false
+                },
+                "align": "left",
+                "size": "lg",
+                "button_text_color": "#FFFFFF",
+                "background_color": "#E35205",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "50",
+                  "right": "50",
+                  "bottom": "50",
+                  "left": "50",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "36",
+                  "bottom": "16",
+                  "left": "36",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "hover_color": "#FFFFFF",
+                "button_background_hover_color": "#c44600",
+                "_animation": "fadeInUp",
+                "_animation_delay": 600
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_reassurance",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "24",
+          "bottom": "20",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "40"
+      },
+      "elements": [
+        {
+          "id": "jrd_reass_col1",
+          "elType": "column",
+          "settings": { "_column_size": 25, "content_position": "center" },
+          "elements": [
+            {
+              "id": "jrd_reass_1",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-calendar-alt", "library": "fa-solid" },
+                "title_text": "Depuis plus de 20 ans",
+                "description_text": "",
+                "icon_space": { "unit": "px", "size": 12 },
+                "position": "left",
+                "primary_color": "#E35205",
+                "title_color": "rgba(255,255,255,0.9)",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": { "unit": "px", "size": 14 },
+                "title_typography_font_weight": "600",
+                "icon_size": { "unit": "px", "size": 18 }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_reass_col2",
+          "elType": "column",
+          "settings": { "_column_size": 25, "content_position": "center" },
+          "elements": [
+            {
+              "id": "jrd_reass_2",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-box-open", "library": "fa-solid" },
+                "title_text": "Des milliers de produits",
+                "description_text": "",
+                "icon_space": { "unit": "px", "size": 12 },
+                "position": "left",
+                "primary_color": "#E35205",
+                "title_color": "rgba(255,255,255,0.9)",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": { "unit": "px", "size": 14 },
+                "title_typography_font_weight": "600",
+                "icon_size": { "unit": "px", "size": 18 }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_reass_col3",
+          "elType": "column",
+          "settings": { "_column_size": 25, "content_position": "center" },
+          "elements": [
+            {
+              "id": "jrd_reass_3",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-store", "library": "fa-solid" },
+                "title_text": "2 magasins",
+                "description_text": "",
+                "icon_space": { "unit": "px", "size": 12 },
+                "position": "left",
+                "primary_color": "#E35205",
+                "title_color": "rgba(255,255,255,0.9)",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": { "unit": "px", "size": 14 },
+                "title_typography_font_weight": "600",
+                "icon_size": { "unit": "px", "size": 18 }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_reass_col4",
+          "elType": "column",
+          "settings": { "_column_size": 25, "content_position": "center" },
+          "elements": [
+            {
+              "id": "jrd_reass_4",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-users", "library": "fa-solid" },
+                "title_text": "Conseillers experts",
+                "description_text": "",
+                "icon_space": { "unit": "px", "size": 12 },
+                "position": "left",
+                "primary_color": "#E35205",
+                "title_color": "rgba(255,255,255,0.9)",
+                "title_typography_typography": "custom",
+                "title_typography_font_size": { "unit": "px", "size": 14 },
+                "title_typography_font_weight": "600",
+                "icon_size": { "unit": "px", "size": 18 }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_univers",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#faf9f7",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_univers_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "jrd_univers_label",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "EXPLORER",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#E35205",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": { "unit": "px", "size": 2 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_univers_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Nos univers",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1a1a1a",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 48 },
+                "typography_font_weight": "900",
+                "typography_line_height": { "unit": "em", "size": 1.1 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_univers_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Quatre mondes à découvrir en magasin, pensés pour le climat tropical.",
+                "align": "center",
+                "text_color": "#5a5a5a",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.7 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "56", "left": "0", "isLinked": false }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_univers_grid",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#faf9f7",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "jrd_univers_left",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "jrd_cta_pepiniere",
+              "elType": "widget",
+              "widgetType": "call-to-action",
+              "settings": {
+                "skin": "cover",
+                "bg_image": { "url": "", "id": "" },
+                "min_height": { "unit": "px", "size": 560 },
+                "title": "Plantes tropicales",
+                "description": "On vous apprend à les faire pousser.",
+                "button_text": "",
+                "ribbon_title": "Pépinière",
+                "title_color": "#FFFFFF",
+                "description_color": "rgba(255,255,255,0.85)",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_size": { "unit": "px", "size": 32 },
+                "title_typography_font_weight": "900",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Shelby",
+                "description_typography_font_size": { "unit": "px", "size": 18 },
+                "content_vertical_position": "bottom",
+                "background_overlay_background": "gradient",
+                "background_overlay_color": "rgba(0,0,0,0.7)",
+                "background_overlay_color_b": "rgba(0,0,0,0.05)",
+                "background_overlay_gradient_angle": { "unit": "deg", "size": 0 },
+                "border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "content_padding": { "unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_univers_right",
+          "elType": "column",
+          "settings": { "_column_size": 50, "space_between_widgets": 20 },
+          "elements": [
+            {
+              "id": "jrd_cta_animalerie",
+              "elType": "widget",
+              "widgetType": "call-to-action",
+              "settings": {
+                "skin": "cover",
+                "bg_image": { "url": "", "id": "" },
+                "min_height": { "unit": "px", "size": 270 },
+                "title": "Vos compagnons",
+                "description": "On prend soin d'eux avec vous.",
+                "button_text": "",
+                "ribbon_title": "Animalerie",
+                "title_color": "#FFFFFF",
+                "description_color": "rgba(255,255,255,0.85)",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_size": { "unit": "px", "size": 24 },
+                "title_typography_font_weight": "900",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Shelby",
+                "description_typography_font_size": { "unit": "px", "size": 16 },
+                "content_vertical_position": "bottom",
+                "background_overlay_background": "gradient",
+                "background_overlay_color": "rgba(0,0,0,0.7)",
+                "background_overlay_color_b": "rgba(0,0,0,0.05)",
+                "background_overlay_gradient_angle": { "unit": "deg", "size": 0 },
+                "border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "content_padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true }
+              }
+            },
+            {
+              "id": "jrd_cta_jardin",
+              "elType": "widget",
+              "widgetType": "call-to-action",
+              "settings": {
+                "skin": "cover",
+                "bg_image": { "url": "", "id": "" },
+                "min_height": { "unit": "px", "size": 270 },
+                "title": "Votre extérieur",
+                "description": "On transforme votre espace.",
+                "button_text": "",
+                "ribbon_title": "Jardin & Extérieur",
+                "title_color": "#FFFFFF",
+                "description_color": "rgba(255,255,255,0.85)",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_size": { "unit": "px", "size": 24 },
+                "title_typography_font_weight": "900",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Shelby",
+                "description_typography_font_size": { "unit": "px", "size": 16 },
+                "content_vertical_position": "bottom",
+                "background_overlay_background": "gradient",
+                "background_overlay_color": "rgba(0,0,0,0.7)",
+                "background_overlay_color_b": "rgba(0,0,0,0.05)",
+                "background_overlay_gradient_angle": { "unit": "deg", "size": 0 },
+                "border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "content_padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_catalogue",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 900 },
+        "background_background": "classic",
+        "background_color": "#E35205",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "24",
+          "bottom": "80",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_cat_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "jrd_cat_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Découvrez notre dernier catalogue",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 42 },
+                "typography_font_weight": "900",
+                "typography_line_height": { "unit": "em", "size": 1.15 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_cat_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Offres du moment, nouveautés et arrivages en cours dans nos deux magasins.",
+                "align": "center",
+                "text_color": "rgba(255,255,255,0.88)",
+                "typography_typography": "custom",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.7 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_cat_btn",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Feuilleter le catalogue",
+                "link": { "url": "#", "is_external": false },
+                "align": "center",
+                "size": "lg",
+                "button_text_color": "#E35205",
+                "background_color": "#FFFFFF",
+                "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_weight": "700",
+                "typography_font_size": { "unit": "px", "size": 16 },
+                "text_padding": { "unit": "px", "top": "18", "right": "40", "bottom": "18", "left": "40", "isLinked": false }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_pourquoi",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "jrd_pq_img_col",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "jrd_pq_img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": { "url": "", "id": "" },
+                "image_size": "full",
+                "image_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_pq_text_col",
+          "elType": "column",
+          "settings": { "_column_size": 50, "content_position": "center" },
+          "elements": [
+            {
+              "id": "jrd_pq_label",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "POURQUOI NOUS",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "#E35205",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": { "unit": "px", "size": 2 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_pq_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "En Guadeloupe, le jardin ne se fait pas comme ailleurs.",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1a1a1a",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 36 },
+                "typography_font_weight": "900",
+                "typography_line_height": { "unit": "em", "size": 1.15 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_pq_list",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "_id": "pq1",
+                    "text": "<b>Un conseil ancré dans le terrain</b><br>Nos équipes connaissent les sols, l'humidité, le vent et le soleil d'ici.",
+                    "selected_icon": { "value": "fas fa-clock", "library": "fa-solid" }
+                  },
+                  {
+                    "_id": "pq2",
+                    "text": "<b>Venez voir, toucher, sentir</b><br>Posez vos questions, repartez avec la bonne plante et les bons gestes.",
+                    "selected_icon": { "value": "fas fa-heart", "library": "fa-solid" }
+                  },
+                  {
+                    "_id": "pq3",
+                    "text": "<b>Toute la famille y trouve son bonheur</b><br>Du potager au terrarium, un seul arrêt pour tout le monde.",
+                    "selected_icon": { "value": "fas fa-users", "library": "fa-solid" }
+                  }
+                ],
+                "space_between": { "unit": "px", "size": 24 },
+                "icon_color": "#E35205",
+                "icon_size": { "unit": "px", "size": 20 },
+                "text_color": "#5a5a5a",
+                "text_color_hover": "#1a1a1a",
+                "text_indent": { "unit": "px", "size": 16 },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_size": { "unit": "px", "size": 15 },
+                "icon_typography_line_height": { "unit": "em", "size": 1.65 }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_services",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#f3efe8",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_serv_header_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "jrd_serv_label",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "À VOTRE SERVICE",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#E35205",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": { "unit": "px", "size": 2 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_serv_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "On ne vous laisse pas repartir sans solution.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1a1a1a",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 48 },
+                "typography_font_weight": "900",
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "56", "left": "0", "isLinked": false }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_services_grid",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#f3efe8",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "40"
+      },
+      "elements": [
+        {
+          "id": "jrd_serv_col1",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "jrd_serv_1",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-truck", "library": "fa-solid" },
+                "title_text": "Livraison à domicile",
+                "description_text": "Terreau, mobilier, gros volumes : on vous livre partout en Guadeloupe.",
+                "position": "top",
+                "primary_color": "#E35205",
+                "title_color": "#1a1a1a",
+                "description_color": "#5a5a5a",
+                "icon_size": { "unit": "px", "size": 28 },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_weight": "700",
+                "title_typography_font_size": { "unit": "px", "size": 16 },
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "description_typography_line_height": { "unit": "em", "size": 1.6 },
+                "_border_radius": { "unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF",
+                "_padding": { "unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24", "isLinked": false }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_serv_col2",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "jrd_serv_2",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-comment-dots", "library": "fa-solid" },
+                "title_text": "Conseil personnalisé",
+                "description_text": "Un projet d'aménagement ? Nos conseillers vous accompagnent gratuitement.",
+                "position": "top",
+                "primary_color": "#E35205",
+                "title_color": "#1a1a1a",
+                "description_color": "#5a5a5a",
+                "icon_size": { "unit": "px", "size": 28 },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_weight": "700",
+                "title_typography_font_size": { "unit": "px", "size": 16 },
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "description_typography_line_height": { "unit": "em", "size": 1.6 },
+                "_border_radius": { "unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF",
+                "_padding": { "unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24", "isLinked": false }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_serv_col3",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "jrd_serv_3",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-credit-card", "library": "fa-solid" },
+                "title_text": "Carte fidélité",
+                "description_text": "Cumulez des avantages à chaque passage avec la carte Croket'.",
+                "position": "top",
+                "primary_color": "#E35205",
+                "title_color": "#1a1a1a",
+                "description_color": "#5a5a5a",
+                "icon_size": { "unit": "px", "size": 28 },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_weight": "700",
+                "title_typography_font_size": { "unit": "px", "size": 16 },
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "description_typography_line_height": { "unit": "em", "size": 1.6 },
+                "_border_radius": { "unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF",
+                "_padding": { "unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24", "isLinked": false }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_serv_col4",
+          "elType": "column",
+          "settings": { "_column_size": 25 },
+          "elements": [
+            {
+              "id": "jrd_serv_4",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-seedling", "library": "fa-solid" },
+                "title_text": "Rempotage & découpe",
+                "description_text": "On vous prépare vos plantes et matériaux directement sur place.",
+                "position": "top",
+                "primary_color": "#E35205",
+                "title_color": "#1a1a1a",
+                "description_color": "#5a5a5a",
+                "icon_size": { "unit": "px", "size": 28 },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_weight": "700",
+                "title_typography_font_size": { "unit": "px", "size": 16 },
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "description_typography_line_height": { "unit": "em", "size": 1.6 },
+                "_border_radius": { "unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF",
+                "_padding": { "unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24", "isLinked": false }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_conseils",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#faf9f7",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_cons_header",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "jrd_cons_label",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "BLOG & INSPIRATIONS",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#E35205",
+                "typography_typography": "custom",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": { "unit": "px", "size": 2 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_cons_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Le jardin tropical, ça s'apprend.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1a1a1a",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 48 },
+                "typography_font_weight": "900",
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "56", "left": "0", "isLinked": false }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_conseils_grid",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#faf9f7",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "30"
+      },
+      "elements": [
+        {
+          "id": "jrd_cons_col1",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "jrd_cons_card1",
+              "elType": "widget",
+              "widgetType": "call-to-action",
+              "settings": {
+                "skin": "classic",
+                "bg_image": { "url": "", "id": "" },
+                "title": "Quand et comment planter vos arbres fruitiers en Guadeloupe ?",
+                "description": "Nos experts vous guident pour choisir le bon moment et les bonnes espèces.",
+                "button_text": "Lire l'article",
+                "ribbon_title": "Pépinière",
+                "title_color": "#1a1a1a",
+                "description_color": "#5a5a5a",
+                "button_color": "#E35205",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_size": { "unit": "px", "size": 17 },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "image_min_height": { "unit": "px", "size": 220 },
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_cons_col2",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "jrd_cons_card2",
+              "elType": "widget",
+              "widgetType": "call-to-action",
+              "settings": {
+                "skin": "classic",
+                "bg_image": { "url": "", "id": "" },
+                "title": "5 plantes résistantes à la saison cyclonique",
+                "description": "Des végétaux robustes qui tiendront bon quand le vent se lève.",
+                "button_text": "Lire l'article",
+                "ribbon_title": "Saison cyclonique",
+                "title_color": "#1a1a1a",
+                "description_color": "#5a5a5a",
+                "button_color": "#E35205",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_size": { "unit": "px", "size": 17 },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "image_min_height": { "unit": "px", "size": 220 },
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_cons_col3",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "jrd_cons_card3",
+              "elType": "widget",
+              "widgetType": "call-to-action",
+              "settings": {
+                "skin": "classic",
+                "bg_image": { "url": "", "id": "" },
+                "title": "Créer un potager créole : par où commencer ?",
+                "description": "Tout ce qu'il faut savoir pour démarrer votre potager sous les tropiques.",
+                "button_text": "Lire l'article",
+                "ribbon_title": "Potager",
+                "title_color": "#1a1a1a",
+                "description_color": "#5a5a5a",
+                "button_color": "#E35205",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_size": { "unit": "px", "size": 17 },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "image_min_height": { "unit": "px", "size": 220 },
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_temoignages",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_temo_header",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "jrd_temo_label",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "AVIS CLIENTS",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#E35205",
+                "typography_typography": "custom",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": { "unit": "px", "size": 2 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_temo_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ils nous font confiance.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#1a1a1a",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 48 },
+                "typography_font_weight": "900",
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "56", "left": "0", "isLinked": false }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_temo_grid",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "jrd_temo_left",
+          "elType": "column",
+          "settings": { "_column_size": 50, "space_between_widgets": 24 },
+          "elements": [
+            {
+              "id": "jrd_temo_1",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "Le vendeur m'a expliqué pourquoi ma plante faisait des feuilles jaunes depuis des mois. Trois semaines après, elle repartait. Maintenant j'y vais dès que j'ai un doute.",
+                "testimonial_name": "Sabrina",
+                "testimonial_job": "Baie-Mahault",
+                "content_content_color": "#5a5a5a",
+                "name_text_color": "#1a1a1a",
+                "job_text_color": "#E35205",
+                "content_typography_typography": "custom",
+                "content_typography_font_size": { "unit": "px", "size": 15 },
+                "content_typography_font_style": "italic",
+                "content_typography_line_height": { "unit": "em", "size": 1.75 },
+                "name_typography_typography": "custom",
+                "name_typography_font_family": "Jardiland",
+                "name_typography_font_weight": "700",
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#faf9f7",
+                "_padding": { "unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true }
+              }
+            },
+            {
+              "id": "jrd_temo_2",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "Mon chien avait des soucis de peau, c'est ici qu'on m'a orienté vers les bonnes croquettes. Ça fait un an que je n'ai plus de problème. Ils prennent le temps.",
+                "testimonial_name": "Cédric",
+                "testimonial_job": "Les Abymes",
+                "content_content_color": "#5a5a5a",
+                "name_text_color": "#1a1a1a",
+                "job_text_color": "#E35205",
+                "content_typography_typography": "custom",
+                "content_typography_font_size": { "unit": "px", "size": 15 },
+                "content_typography_font_style": "italic",
+                "content_typography_line_height": { "unit": "em", "size": 1.75 },
+                "name_typography_typography": "custom",
+                "name_typography_font_family": "Jardiland",
+                "name_typography_font_weight": "700",
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#faf9f7",
+                "_padding": { "unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_temo_right",
+          "elType": "column",
+          "settings": { "_column_size": 50, "space_between_widgets": 24 },
+          "elements": [
+            {
+              "id": "jrd_temo_3",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "On a refait tout notre jardin, on partait de zéro. Aujourd'hui on a des bananiers, du citron, des aromates... On regrette de ne pas être venus plus tôt.",
+                "testimonial_name": "Stéphanie & Olivier",
+                "testimonial_job": "Baie-Mahault",
+                "content_content_color": "#5a5a5a",
+                "name_text_color": "#1a1a1a",
+                "job_text_color": "#E35205",
+                "content_typography_typography": "custom",
+                "content_typography_font_size": { "unit": "px", "size": 15 },
+                "content_typography_font_style": "italic",
+                "content_typography_line_height": { "unit": "em", "size": 1.75 },
+                "name_typography_typography": "custom",
+                "name_typography_font_family": "Jardiland",
+                "name_typography_font_weight": "700",
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#faf9f7",
+                "_padding": { "unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true }
+              }
+            },
+            {
+              "id": "jrd_temo_4",
+              "elType": "widget",
+              "widgetType": "testimonial",
+              "settings": {
+                "testimonial_content": "J'ai adopté un petit lapin pour ma fille. Le vendeur a pris le temps de tout expliquer. Ma fille a appris à s'en occuper grâce à leurs conseils.",
+                "testimonial_name": "Vanessa",
+                "testimonial_job": "Les Abymes",
+                "content_content_color": "#5a5a5a",
+                "name_text_color": "#1a1a1a",
+                "job_text_color": "#E35205",
+                "content_typography_typography": "custom",
+                "content_typography_font_size": { "unit": "px", "size": 15 },
+                "content_typography_font_style": "italic",
+                "content_typography_line_height": { "unit": "em", "size": 1.75 },
+                "name_typography_typography": "custom",
+                "name_typography_font_family": "Jardiland",
+                "name_typography_font_weight": "700",
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#faf9f7",
+                "_padding": { "unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_engagements",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#2a5a32",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_eng_header",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "jrd_eng_label",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "NOS ENGAGEMENTS",
+                "header_size": "span",
+                "align": "center",
+                "title_color": "#6aad6a",
+                "typography_typography": "custom",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": { "unit": "px", "size": 2 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_eng_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Jardiland Guadeloupe, c'est d'ici.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 48 },
+                "typography_font_weight": "900",
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "56", "left": "0", "isLinked": false }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_eng_grid",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#2a5a32",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "30"
+      },
+      "elements": [
+        {
+          "id": "jrd_eng_col1",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "jrd_eng_1",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-globe-americas", "library": "fa-solid" },
+                "title_text": "Pépiniéristes locaux",
+                "description_text": "Une partie de nos végétaux provient de producteurs guadeloupéens engagés dans une démarche durable.",
+                "position": "top",
+                "primary_color": "#6aad6a",
+                "title_color": "#FFFFFF",
+                "description_color": "rgba(255,255,255,0.75)",
+                "icon_size": { "unit": "px", "size": 28 },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_weight": "700",
+                "title_typography_font_size": { "unit": "px", "size": 17 },
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "description_typography_line_height": { "unit": "em", "size": 1.7 },
+                "_border_radius": { "unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "rgba(255,255,255,0.08)",
+                "_padding": { "unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true },
+                "_border_border": "solid",
+                "_border_color": "rgba(255,255,255,0.1)",
+                "_border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_eng_col2",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "jrd_eng_2",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-recycle", "library": "fa-solid" },
+                "title_text": "Réduction des emballages",
+                "description_text": "Nous nous engageons à réduire notre impact plastique en magasin, pas à pas.",
+                "position": "top",
+                "primary_color": "#6aad6a",
+                "title_color": "#FFFFFF",
+                "description_color": "rgba(255,255,255,0.75)",
+                "icon_size": { "unit": "px", "size": 28 },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_weight": "700",
+                "title_typography_font_size": { "unit": "px", "size": 17 },
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "description_typography_line_height": { "unit": "em", "size": 1.7 },
+                "_border_radius": { "unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "rgba(255,255,255,0.08)",
+                "_padding": { "unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true },
+                "_border_border": "solid",
+                "_border_color": "rgba(255,255,255,0.1)",
+                "_border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_eng_col3",
+          "elType": "column",
+          "settings": { "_column_size": 33 },
+          "elements": [
+            {
+              "id": "jrd_eng_3",
+              "elType": "widget",
+              "widgetType": "icon-box",
+              "settings": {
+                "selected_icon": { "value": "fas fa-handshake", "library": "fa-solid" },
+                "title_text": "Partenariats locaux",
+                "description_text": "Associations, écoles, collectivités : nous contribuons activement à l'économie locale.",
+                "position": "top",
+                "primary_color": "#6aad6a",
+                "title_color": "#FFFFFF",
+                "description_color": "rgba(255,255,255,0.75)",
+                "icon_size": { "unit": "px", "size": 28 },
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Jardiland",
+                "title_typography_font_weight": "700",
+                "title_typography_font_size": { "unit": "px", "size": 17 },
+                "description_typography_typography": "custom",
+                "description_typography_font_size": { "unit": "px", "size": 14 },
+                "description_typography_line_height": { "unit": "em", "size": 1.7 },
+                "_border_radius": { "unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "rgba(255,255,255,0.08)",
+                "_padding": { "unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true },
+                "_border_border": "solid",
+                "_border_color": "rgba(255,255,255,0.1)",
+                "_border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_magasins",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": { "unit": "px", "size": 1200 },
+        "background_background": "classic",
+        "background_color": "#faf9f7",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        },
+        "structure": "20"
+      },
+      "elements": [
+        {
+          "id": "jrd_mag_col1",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "jrd_mag_1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h3 style=\"font-family:Jardiland,sans-serif;font-size:1.3rem;font-weight:900;color:#1a1a1a;margin-bottom:16px;\"><span style=\"display:inline-block;width:12px;height:12px;background:#E35205;border-radius:50%;margin-right:10px;\"></span>Jardiland Baie-Mahault</h3><p style=\"color:#5a5a5a;font-size:0.9rem;line-height:1.9;\"><strong style=\"color:#1a1a1a;\">Adresse :</strong> Centre commercial Jardi-Village, Jabrun — 97122 Baie-Mahault<br><strong style=\"color:#1a1a1a;\">Horaires :</strong> Lundi au samedi : 8h30 – 19h · Dimanche : 9h – 13h<br><strong style=\"color:#1a1a1a;\">Téléphone :</strong> 0590 60 67 00</p><div style=\"margin:16px 0;\"><a href=\"https://maps.google.com/?q=Jardiland+Baie-Mahault+Guadeloupe\" target=\"_blank\" style=\"display:inline-block;padding:10px 20px;border-radius:50px;background:#4285f4;color:#fff;font-weight:700;font-size:0.82rem;margin-right:8px;\">Google Maps</a><a href=\"https://waze.com/ul?q=Jardiland+Baie-Mahault\" target=\"_blank\" style=\"display:inline-block;padding:10px 20px;border-radius:50px;background:#33ccff;color:#fff;font-weight:700;font-size:0.82rem;\">Waze</a></div><div style=\"background:#f3efe8;border-radius:12px;padding:16px 20px;font-size:0.85rem;color:#5a5a5a;\"><strong style=\"color:#1a1a1a;\">Temps de trajet indicatif :</strong><br>Depuis Pointe-à-Pitre : ~10 min · Depuis Basse-Terre : ~40 min</div><div style=\"margin-top:14px;\"><span style=\"background:#e8f5e9;color:#2a5a32;padding:6px 14px;border-radius:50px;font-size:0.78rem;font-weight:700;margin-right:8px;\">Parking gratuit</span><span style=\"background:#e8f5e9;color:#2a5a32;padding:6px 14px;border-radius:50px;font-size:0.78rem;font-weight:700;\">Accès PMR</span></div>",
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF",
+                "_padding": { "unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40", "isLinked": true }
+              }
+            }
+          ]
+        },
+        {
+          "id": "jrd_mag_col2",
+          "elType": "column",
+          "settings": { "_column_size": 50 },
+          "elements": [
+            {
+              "id": "jrd_mag_2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<h3 style=\"font-family:Jardiland,sans-serif;font-size:1.3rem;font-weight:900;color:#1a1a1a;margin-bottom:16px;\"><span style=\"display:inline-block;width:12px;height:12px;background:#E35205;border-radius:50%;margin-right:10px;\"></span>Jardiland Les Abymes</h3><p style=\"color:#5a5a5a;font-size:0.9rem;line-height:1.9;\"><strong style=\"color:#1a1a1a;\">Adresse :</strong> Rond-point de Providence — 97139 Les Abymes<br><strong style=\"color:#1a1a1a;\">Horaires :</strong> Lundi au samedi : 8h30 – 19h · Dimanche : 9h – 13h<br><strong style=\"color:#1a1a1a;\">Téléphone :</strong> 0590 30 02 66</p><div style=\"margin:16px 0;\"><a href=\"https://maps.google.com/?q=Jardiland+Les+Abymes+Guadeloupe\" target=\"_blank\" style=\"display:inline-block;padding:10px 20px;border-radius:50px;background:#4285f4;color:#fff;font-weight:700;font-size:0.82rem;margin-right:8px;\">Google Maps</a><a href=\"https://waze.com/ul?q=Jardiland+Les+Abymes\" target=\"_blank\" style=\"display:inline-block;padding:10px 20px;border-radius:50px;background:#33ccff;color:#fff;font-weight:700;font-size:0.82rem;\">Waze</a></div><div style=\"background:#f3efe8;border-radius:12px;padding:16px 20px;font-size:0.85rem;color:#5a5a5a;\"><strong style=\"color:#1a1a1a;\">Temps de trajet indicatif :</strong><br>Depuis Pointe-à-Pitre : ~10 min · Depuis Sainte-Anne : ~25 min</div><div style=\"margin-top:14px;\"><span style=\"background:#e8f5e9;color:#2a5a32;padding:6px 14px;border-radius:50px;font-size:0.78rem;font-weight:700;margin-right:8px;\">Parking gratuit</span><span style=\"background:#e8f5e9;color:#2a5a32;padding:6px 14px;border-radius:50px;font-size:0.78rem;font-weight:700;\">Accès PMR</span></div>",
+                "_border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "_background_background": "classic",
+                "_background_color": "#FFFFFF",
+                "_padding": { "unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40", "isLinked": true }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jrd_newsletter",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": { "unit": "px", "size": 800 },
+        "background_background": "gradient",
+        "background_color": "#E35205",
+        "background_color_b": "#c44600",
+        "background_gradient_angle": { "unit": "deg", "size": 135 },
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "24",
+          "bottom": "100",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "jrd_news_col",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "jrd_news_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ne ratez rien.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFFFF",
+                "typography_typography": "custom",
+                "typography_font_family": "Jardiland",
+                "typography_font_size": { "unit": "px", "size": 48 },
+                "typography_font_weight": "900",
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_news_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Conseils, promos, nouveautés : suivez-nous et inscrivez-vous à notre newsletter.",
+                "align": "center",
+                "text_color": "rgba(255,255,255,0.85)",
+                "typography_typography": "custom",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.7 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "40", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_news_social",
+              "elType": "widget",
+              "widgetType": "social-icons",
+              "settings": {
+                "social_icon_list": [
+                  { "_id": "fb", "social_icon": { "value": "fab fa-facebook-f", "library": "fa-brands" }, "link": { "url": "#" } },
+                  { "_id": "ig", "social_icon": { "value": "fab fa-instagram", "library": "fa-brands" }, "link": { "url": "#" } },
+                  { "_id": "tk", "social_icon": { "value": "fab fa-tiktok", "library": "fa-brands" }, "link": { "url": "#" } }
+                ],
+                "align": "center",
+                "icon_color": "custom",
+                "icon_primary_color": "rgba(255,255,255,0.15)",
+                "icon_secondary_color": "#FFFFFF",
+                "icon_size": { "unit": "px", "size": 18 },
+                "icon_spacing": { "unit": "px", "size": 14 },
+                "image_border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "image_border_color": "rgba(255,255,255,0.25)",
+                "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                "icon_padding": { "unit": "em", "size": 0.8 },
+                "_margin": { "unit": "px", "top": "0", "right": "0", "bottom": "40", "left": "0", "isLinked": false }
+              }
+            },
+            {
+              "id": "jrd_news_form",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "Newsletter Jardiland",
+                "form_fields": [
+                  {
+                    "_id": "email",
+                    "field_type": "email",
+                    "field_label": "",
+                    "placeholder": "Votre adresse e-mail",
+                    "required": "true",
+                    "width": "75"
+                  },
+                  {
+                    "_id": "submit",
+                    "field_type": "submit",
+                    "button_text": "Je m'inscris",
+                    "width": "25"
+                  }
+                ],
+                "button_background_color": "#1a1a1a",
+                "button_text_color": "#FFFFFF",
+                "button_border_radius": { "unit": "px", "top": "0", "right": "50", "bottom": "50", "left": "0", "isLinked": false },
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Jardiland",
+                "button_typography_font_weight": "700",
+                "field_background_color": "#FFFFFF",
+                "field_border_radius": { "unit": "px", "top": "50", "right": "0", "bottom": "0", "left": "50", "isLinked": false },
+                "field_border_width": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": true },
+                "column_gap": { "unit": "px", "size": 0 },
+                "_element_width": "initial",
+                "_element_custom_width": { "unit": "px", "size": 480 },
+                "_position": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "custom_css": "/* Polices Jardiland : à uploader via Custom Fonts plugin */\n/* Couleur primaire : #E35205 */\n/* Couleur secondaire (vert) : #2a5a32 */\n/* Police titres : Jardiland */\n/* Police corps : Inter (Google Font) */\n\nselector h1, selector h2, selector h3 {\n  font-family: 'Jardiland', 'Inter', sans-serif;\n}",
+    "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+    }
+  },
+  "version": "0.4",
+  "title": "Jardiland Guadeloupe - Homepage",
+  "type": "page"
+}

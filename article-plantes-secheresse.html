@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 plantes resistantes a la secheresse — Jardiland Guadeloupe</title>
+<link rel="icon" type="image/svg+xml" href="images/logo-jardiland.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============ FONTS ============ */
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Regular Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jardiland';
+  src: url('fonts/Jardiland-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Shelby';
+  src: url('fonts/Shelby-W05-Bold.ttf') format('truetype'),
+       url('fonts/Shelby-W05-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============ VARIABLES ============ */
+:root {
+  --orange: #E35205;
+  --orange-dark: #c44600;
+  --orange-light: #ff6a1a;
+  --white: #ffffff;
+  --offwhite: #faf9f7;
+  --cream: #f3efe8;
+  --dark: #1a1a1a;
+  --dark-soft: #2d2d2d;
+  --gray: #5a5a5a;
+  --gray-light: #9a9a9a;
+  --green: #3d7c47;
+  --green-dark: #2a5a32;
+  --green-light: #6aad6a;
+  --green-soft: #e8f5e9;
+  --gold: #eec53a;
+  --font-brand: 'Jardiland', 'Inter', sans-serif;
+  --font-body: 'Inter', 'Jardiland', sans-serif;
+  --font-script: 'Shelby', cursive;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.08);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.12);
+  --transition: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ============ RESET ============ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-body);
+  color: var(--dark);
+  background: var(--offwhite);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ============ HEADER ============ */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s;
+}
+header.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+}
+.logo { height: 44px; transition: var(--transition); }
+.logo:hover { transform: scale(1.03); }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a {
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--orange); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--orange); }
+.nav-links a.active::after { width: 100%; }
+.nav-cta {
+  background: var(--orange);
+  color: var(--white) !important;
+  padding: 10px 22px !important;
+  border-radius: 50px;
+  font-weight: 700 !important;
+  transition: all 0.3s !important;
+}
+.nav-cta::after { display: none !important; }
+.nav-cta:hover {
+  background: var(--orange-dark) !important;
+  color: var(--white) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(227,82,5,0.3);
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--dark);
+  border-radius: 2px;
+  transition: all 0.3s;
+  position: absolute;
+  left: 4px;
+}
+.menu-toggle span:nth-child(1) { top: 8px; }
+.menu-toggle span:nth-child(2) { top: 15px; }
+.menu-toggle span:nth-child(3) { top: 22px; }
+.menu-toggle.active span:nth-child(1) { top: 15px; transform: rotate(45deg); }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { top: 15px; transform: rotate(-45deg); }
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 32px;
+  border-radius: 50px;
+  font-family: var(--font-brand);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  letter-spacing: 0.01em;
+}
+.btn-outline-dark {
+  background: transparent;
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+.btn-outline-dark:hover {
+  background: var(--dark);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+.btn-sm { padding: 10px 22px; font-size: 0.85rem; }
+
+/* ============ SCROLL REVEAL ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ============ ARTICLE LAYOUT ============ */
+.article-wrapper {
+  margin-top: 72px;
+  padding: 40px 24px 100px;
+}
+.article-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--gray-light);
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--gray); transition: color 0.3s; }
+.breadcrumb a:hover { color: var(--orange); }
+.breadcrumb .sep { color: var(--gray-light); }
+.breadcrumb .current { color: var(--dark); font-weight: 500; }
+
+/* Article header */
+.article-tag {
+  display: inline-block;
+  background: rgba(227,82,5,0.1);
+  color: var(--orange);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+.article-header h1 {
+  font-family: var(--font-brand);
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  font-weight: 900;
+  color: var(--dark);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.88rem;
+  color: var(--gray);
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.article-meta span { display: flex; align-items: center; gap: 6px; }
+
+/* Hero image */
+.article-hero-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: 48px;
+}
+
+/* Article body typography */
+.article-body h2 {
+  font-family: var(--font-brand);
+  font-size: 1.55rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-top: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.article-body h3 {
+  font-family: var(--font-brand);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-top: 32px;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+.article-body p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+.article-body strong { color: var(--dark); font-weight: 600; }
+
+/* Unordered lists */
+.article-body ul { margin-bottom: 24px; padding-left: 0; }
+.article-body ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--gray);
+}
+.article-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+/* Tip callout */
+.tip-box {
+  background: var(--cream);
+  border-left: 4px solid var(--orange);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+}
+.tip-box-label {
+  font-family: var(--font-brand);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--orange);
+  margin-bottom: 8px;
+  display: block;
+}
+.tip-box p {
+  font-style: italic;
+  color: var(--gray);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* Back button */
+.article-back {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ============ RELATED ARTICLES ============ */
+.related-section {
+  margin-top: 64px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.related-section h2 {
+  font-family: var(--font-brand);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 28px;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.related-card {
+  display: flex;
+  gap: 16px;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.3s;
+}
+.related-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.related-card-img {
+  width: 140px;
+  min-height: 120px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.related-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.related-card-body {
+  padding: 16px 16px 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.related-card-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.related-card-body h3 {
+  font-family: var(--font-brand);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.35;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: var(--dark);
+  padding: 48px 24px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-logo { height: 36px; filter: brightness(0) invert(1); opacity: 0.7; }
+.footer-text { color: rgba(255,255,255,0.45); font-size: 0.82rem; }
+.footer-text a { color: var(--orange); transition: color 0.3s; }
+.footer-text a:hover { color: var(--orange-light); }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { color: rgba(255,255,255,0.5); font-size: 0.82rem; transition: color 0.3s; }
+.footer-links a:hover { color: var(--white); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 1rem; }
+  .nav-links { gap: 0 !important; align-items: stretch; max-height: calc(100vh - 72px); overflow-y: auto; padding: 16px !important; }
+  .nav-links > li { width: 100%; }
+  .nav-links > li > a { padding: 14px 16px !important; border-bottom: 1px solid rgba(0,0,0,0.06); border-radius: 0 !important; font-size: 0.95rem !important; }
+  .dropdown { position: static !important; opacity: 1 !important; visibility: visible !important; transform: none !important; box-shadow: none !important; background: var(--cream) !important; padding: 8px !important; margin: 0 0 8px 0; border: none !important; border-radius: 0 !important; display: none; }
+  .nav-links > li.has-dropdown.open .dropdown { display: block; }
+  .nav-links > li.has-dropdown > a::after { transition: transform 0.3s; }
+  .nav-links > li.has-dropdown.open > a::after { transform: rotate(180deg); }
+  .article-wrapper { padding: 24px 16px 64px; }
+  .article-header h1 { font-size: 1.6rem; }
+  .article-hero-img { border-radius: var(--radius); max-height: 300px; }
+  .article-body h2 { font-size: 1.3rem; margin-top: 36px; }
+  .related-grid { grid-template-columns: 1fr; }
+  .related-card-img { width: 110px; min-height: 100px; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; }
+}
+
+/* ============ MEGA-MENU DROPDOWN OVERRIDES ============ */
+.nav-links { gap: 4px !important; }
+.nav-links > li { position: relative; }
+.nav-links > li > a {
+  display: block;
+  padding: 10px 12px !important;
+  border-radius: 8px;
+  font-size: 0.85rem !important;
+}
+.nav-links > li > a::after { display: none !important; }
+.nav-links > li > a:hover { background: rgba(227,82,5,0.06); }
+.nav-links > li.has-dropdown > a::after {
+  content: '▾' !important;
+  display: inline !important;
+  position: static !important;
+  background: none !important;
+  width: auto !important; height: auto !important;
+  margin-left: 6px;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+.dropdown {
+  position: absolute; top: calc(100% + 8px); left: 0;
+  list-style: none;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 12px;
+  min-width: 260px;
+  opacity: 0; visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.nav-links > li:hover > .dropdown,
+.nav-links > li:focus-within > .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+.dropdown li { margin: 0; }
+.dropdown li a {
+  display: block !important;
+  padding: 10px 14px !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+  border-radius: 8px;
+  color: var(--dark) !important;
+  transition: all 0.2s;
+}
+.dropdown li a::after { display: none !important; }
+.dropdown li a:hover { background: var(--cream); color: var(--orange) !important; padding-left: 18px !important; }
+.dropdown li.dropdown-title {
+  padding: 8px 14px 4px;
+  font-family: var(--font-brand); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--orange);
+}
+@media (max-width: 1100px) {
+  .nav-links > li > a { padding: 10px 8px !important; font-size: 0.8rem !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header id="header" class="site-header">
+  <div class="nav-inner">
+    <a href="index.html"><img src="images/logo-jardiland.svg" alt="Jardiland Guadeloupe" class="logo"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li class="has-dropdown">
+          <a href="pepiniere.html">Pépinière</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Pépinière</li>
+            <li><a href="pepiniere.html">Vue d'ensemble</a></li>
+            <li><a href="pepiniere-plantes-exterieur.html">Plantes d'extérieur tropicales</a></li>
+            <li><a href="pepiniere-plantes-interieur.html">Plantes d'intérieur</a></li>
+            <li><a href="pepiniere-fruitiers.html">Fruitiers tropicaux</a></li>
+            <li><a href="pepiniere-potager.html">Potager créole &amp; aromatiques</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="animalerie.html">Animalerie</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Animalerie</li>
+            <li><a href="animalerie.html">Vue d'ensemble</a></li>
+            <li><a href="animalerie-chiens-chats.html">Chiens &amp; chats</a></li>
+            <li><a href="animalerie-rongeurs.html">Rongeurs &amp; petits animaux</a></li>
+            <li><a href="animalerie-aquariophilie.html">Aquariophilie</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="outils.html">Outils &amp; Entretien</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Outils &amp; Entretien</li>
+            <li><a href="outils.html">Vue d'ensemble</a></li>
+            <li><a href="outils-jardin.html">Outillage de jardin</a></li>
+            <li><a href="outils-engrais.html">Engrais, terreaux &amp; traitements</a></li>
+            <li><a href="outils-arrosage.html">Arrosage &amp; récupération d'eau</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="plein-air.html">Plein Air &amp; Déco</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Univers Plein Air &amp; Déco</li>
+            <li><a href="plein-air.html">Vue d'ensemble</a></li>
+            <li><a href="plein-air-mobilier.html">Mobilier de jardin</a></li>
+            <li><a href="plein-air-barbecues.html">Barbecues &amp; planchas</a></li>
+            <li><a href="plein-air-piscines.html">Piscines en kit &amp; bassins</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="blog.html">Conseils</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li class="has-dropdown">
+          <a href="magasins.html">Magasins</a>
+          <ul class="dropdown">
+            <li class="dropdown-title">Nos magasins</li>
+            <li><a href="magasins.html">Les deux magasins</a></li>
+            <li><a href="magasin-baie-mahault.html">Jardiland Baie-Mahault</a></li>
+            <li><a href="magasin-les-abymes.html">Jardiland Les Abymes</a></li>
+          </ul>
+        </li>
+        <li><a href="services.html" class="nav-cta">Nos services</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== ARTICLE ========== -->
+<div class="article-wrapper">
+  <article class="article-container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span class="sep">&rsaquo;</span>
+      <a href="blog.html">Blog</a>
+      <span class="sep">&rsaquo;</span>
+      <span class="current">5 plantes resistantes a la secheresse</span>
+    </nav>
+
+    <!-- Article header -->
+    <div class="article-header">
+      <span class="article-tag">Sécheresse</span>
+      <h1>5 plantes resistantes a la secheresse pour votre jardin tropical</h1>
+      <div class="article-meta">
+        <span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          10 min de lecture
+        </span>
+        <span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Avril 2026
+        </span>
+      </div>
+    </div>
+
+    <!-- Hero image -->
+    <img src="images/jardin-exterieur.jpg" alt="Jardin tropical resistant a la secheresse" class="article-hero-img">
+
+    <!-- Article body -->
+    <div class="article-body">
+
+      <p>Chaque annee, le careme met nos jardins a rude epreuve. Restrictions d'eau, sols qui craquellent, feuillages qui jaunissent... la secheresse devient une realite avec laquelle il faut composer. Bonne nouvelle : certaines plantes superbes prosperent meme quand la pluie se fait rare. Voici notre selection de 5 vegetaux robustes, testes sous notre climat, pour un jardin qui tient bon sans vous ruiner en arrosage.</p>
+
+      <h2>Pourquoi miser sur des plantes resistantes a la secheresse ?</h2>
+      <p>En Guadeloupe, le careme s'etend generalement de janvier a mai, avec des episodes de secheresse parfois severes qui peuvent se prolonger jusqu'en juin. Face au changement climatique, ces periodes tendent a s'allonger et les restrictions d'eau a se multiplier. Construire un jardin resilient, c'est anticiper ces contraintes plutot que de les subir.</p>
+      <p>Les plantes adaptees a la secheresse presentent des avantages concrets : elles demandent peu d'arrosage une fois installees, resistent mieux aux maladies liees au stress hydrique, et permettent de faire des economies significatives sur votre facture d'eau. Elles contribuent aussi a la biodiversite locale en attirant pollinisateurs et oiseaux.</p>
+
+      <div class="tip-box">
+        <span class="tip-box-label">Le conseil de nos pépiniéristes</span>
+        <p>Meme les plantes les plus resistantes ont besoin d'un arrosage soutenu pendant les 2 a 3 premiers mois apres plantation, le temps de developper un systeme racinaire profond. C'est cet enracinement qui leur permettra ensuite d'aller chercher l'humidite en profondeur.</p>
+      </div>
+
+      <h2>1. Le bougainvillier : l'incontournable des jardins creoles</h2>
+      <p>Veritable embleme des jardins antillais, le bougainvillier (Bougainvillea spectabilis) est probablement la plante ornementale la plus resistante a la secheresse qu'on puisse cultiver sous nos latitudes. Originaire d'Amerique du Sud, il supporte sans broncher des mois sans pluie une fois bien installe.</p>
+
+      <h3>Pourquoi on l'aime</h3>
+      <ul>
+        <li>Floraison spectaculaire quasiment toute l'annee, avec un pic pendant le careme.</li>
+        <li>Palette de couleurs impressionnante : rose fuchsia, violet, blanc, orange, rouge, saumon.</li>
+        <li>S'adapte en haie, en grimpant, en arbuste libre ou en bonsai.</li>
+      </ul>
+
+      <h3>Nos conseils de culture</h3>
+      <p>Plantez-le en plein soleil dans un sol bien draine : il deteste les exces d'eau, qui provoquent la chute des bractees colorees. Taillez legerement apres chaque floraison pour stimuler la suivante. Un arrosage espace (une fois par semaine maximum en periode seche, pour les sujets installes) favorise paradoxalement la floraison.</p>
+
+      <h2>2. L'agave : la sculpture vivante qui ne craint rien</h2>
+      <p>L'agave (Agave attenuata, Agave americana) est une plante grasse spectaculaire, parfaite pour structurer un massif ou encadrer une entree. Avec ses grandes feuilles charnues disposees en rosette, elle apporte une touche architecturale immediate et ne demande quasiment aucun entretien.</p>
+
+      <h3>Pourquoi on l'aime</h3>
+      <ul>
+        <li>Resistance extreme a la secheresse grace a ses feuilles qui stockent l'eau.</li>
+        <li>Forme graphique qui met en valeur les autres plantations.</li>
+        <li>Pratiquement aucun entretien une fois installee.</li>
+      </ul>
+
+      <h3>Nos conseils de culture</h3>
+      <p>Placez-la en plein soleil dans un sol tres bien draine, idealement sablonneux ou caillouteux. Espacez largement les sujets : certaines varietes atteignent 2 metres d'envergure. Attention aux epines sur certaines especes : evitez les abords de passage et les endroits frequentes par les enfants.</p>
+
+      <h2>3. Le laurier-rose : la haie fleurie qui se moque de la secheresse</h2>
+      <p>Le laurier-rose (Nerium oleander) est sans doute l'une des plantes de haie les plus resistantes qui soient. Originaire du bassin mediterraneen, il s'est parfaitement acclimate sous les tropiques et offre une floraison genereuse pendant presque toute l'annee.</p>
+
+      <h3>Pourquoi on l'aime</h3>
+      <ul>
+        <li>Croissance rapide pour une haie dense en 2 a 3 ans.</li>
+        <li>Floraison abondante en rose, blanc, rouge ou saumon.</li>
+        <li>Supporte vent, embruns et sols pauvres.</li>
+      </ul>
+
+      <h3>Nos conseils de culture</h3>
+      <p>Plantez en plein soleil avec un espacement de 1 a 1,5 metre pour une haie compacte. Taillez en fin de floraison pour maintenir la forme et stimuler la ramification. Attention : toutes les parties de la plante sont toxiques si ingerees — a eviter si vous avez de jeunes enfants ou des animaux qui grignotent tout ce qu'ils voient.</p>
+
+      <div class="tip-box">
+        <span class="tip-box-label">Le conseil de nos pépiniéristes</span>
+        <p>Le laurier-rose est magnifique, mais sa toxicite en fait une plante a placer avec reflexion. En cas de doute, nos equipes vous orienteront vers des alternatives tout aussi decoratives comme l'hibiscus ou la lantana.</p>
+      </div>
+
+      <h2>4. La frangipanier : l'elegance qui resiste au careme</h2>
+      <p>Le frangipanier (Plumeria) est cet arbuste qui incarne a lui seul l'esprit des jardins tropicaux. Ses fleurs parfumees et son port sculptural en font un sujet de choix, et sa resistance a la secheresse le rend particulierement precieux dans un jardin sobre en eau.</p>
+
+      <h3>Pourquoi on l'aime</h3>
+      <ul>
+        <li>Floraison parfumee exceptionnelle, en blanc, jaune, rose, rouge ou bicolore.</li>
+        <li>Silhouette graphique meme hors floraison, avec ses branches charnues.</li>
+        <li>Feuillage caduc pendant le careme qui reduit naturellement ses besoins en eau.</li>
+      </ul>
+
+      <h3>Nos conseils de culture</h3>
+      <p>Le frangipanier adore le soleil et les sols bien draines. Il deteste l'exces d'eau, qui provoque rapidement la pourriture des racines. En pleine terre, un arrosage bimensuel en saison seche suffit largement aux sujets installes. Se bouture tres facilement : une branche plantee en saison seche produit un nouvel arbre en quelques mois.</p>
+
+      <h2>5. La lantana : la couleur qui ne faiblit jamais</h2>
+      <p>Plante couvre-sol ou petit arbuste selon la variete, la lantana (Lantana camara) est un champion de la resistance au stress hydrique. Sa floraison ininterrompue, meme en plein careme, en fait une alliee precieuse pour les massifs, bordures et jardinieres exposes.</p>
+
+      <h3>Pourquoi on l'aime</h3>
+      <ul>
+        <li>Floraison continue toute l'annee, meme pendant les episodes de secheresse.</li>
+        <li>Varietes multicolores qui changent de teinte en vieillissant.</li>
+        <li>Attire papillons et pollinisateurs, utile pour la biodiversite du jardin.</li>
+      </ul>
+
+      <h3>Nos conseils de culture</h3>
+      <p>Plantez en plein soleil dans un sol ordinaire, meme pauvre. Un leger arrosage hebdomadaire en periode seche suffit. Taillez regulierement pour eviter qu'elle ne devienne envahissante et pour stimuler la floraison. Ideale en association avec des agaves ou des bougainvilliers pour creer un massif mediterraneen-tropical qui demande peu d'eau.</p>
+
+      <h2>Composer un jardin econome en eau : nos principes cles</h2>
+      <p>Installer des plantes resistantes a la secheresse, c'est bien. Construire un jardin coherent qui tire parti de ces vegetaux, c'est mieux. Voici les grands principes a retenir pour reussir votre amenagement.</p>
+
+      <h3>Regrouper les plantes selon leurs besoins</h3>
+      <p>C'est la regle d'or du jardinage raisonne : les plantes resistantes a la secheresse vont ensemble, les plantes gourmandes en eau aussi. Cette logique, appelee &laquo; xeropaysagisme &raquo;, permet d'arroser efficacement sans gacher d'eau sur les zones qui n'en ont pas besoin.</p>
+
+      <h3>Pailler, encore et toujours</h3>
+      <p>Un sol paille perd 3 a 4 fois moins d'eau par evaporation qu'un sol nu. Bagasse, feuilles mortes, copeaux de bois, paille : tout est bon pour couvrir la terre autour de vos plantations. Bonus : le paillis limite la pousse des adventices et nourrit progressivement le sol en se decomposant.</p>
+
+      <h3>Recuperer l'eau de pluie</h3>
+      <p>En saison humide, la Guadeloupe recoit largement de quoi arroser un jardin pendant des mois. Installer un ou plusieurs recuperateurs d'eau de pluie sous les gouttieres transforme cette ressource gratuite en reserve precieuse pour le careme. Une cuve de 500 a 1000 litres represente un investissement vite rentabilise.</p>
+
+      <div class="tip-box">
+        <span class="tip-box-label">Le conseil de nos pépiniéristes</span>
+        <p>Arrosez tot le matin ou en fin de journee, jamais en plein soleil. L'eau penetre mieux dans le sol et s'evapore beaucoup moins. Et surtout : arrosez moins souvent mais en profondeur, pour forcer les racines a descendre chercher l'humidite.</p>
+      </div>
+
+      <h2>Votre jardin resilient commence ici</h2>
+      <p>Face aux evolutions du climat, repenser son jardin autour de plantes adaptees n'est plus un luxe, c'est une demarche de bon sens. Chez Jardiland Guadeloupe, nous selectionnons en permanence des vegetaux robustes, acclimates et economes en eau pour vous permettre de creer un exterieur qui traverse les saisons sans faiblir.</p>
+      <p>Besoin de conseils personnalises ? Nos equipes vous accueillent en magasin pour faire le point sur votre projet, evaluer votre sol et vous proposer une selection adaptee a votre exposition et a vos envies.</p>
+
+      <!-- Back button -->
+      <div class="article-back">
+        <a href="blog.html" class="btn btn-outline-dark btn-sm">&larr; Retour au blog</a>
+      </div>
+    </div>
+
+    <!-- Related articles -->
+    <div class="related-section">
+      <h2>Articles qui pourraient vous interesser</h2>
+      <div class="related-grid">
+        <a href="article-arbres-fruitiers.html" class="related-card">
+          <div class="related-card-img">
+            <img src="images/conseil-plantes.jpg" alt="Arbres fruitiers en Guadeloupe">
+          </div>
+          <div class="related-card-body">
+            <span class="related-card-tag">Pépinière</span>
+            <h3>Quand et comment planter vos arbres fruitiers en Guadeloupe ?</h3>
+          </div>
+        </a>
+        <a href="article-potager-creole.html" class="related-card">
+          <div class="related-card-img">
+            <img src="images/pepiniere.jpg" alt="Potager creole">
+          </div>
+          <div class="related-card-body">
+            <span class="related-card-tag">Potager</span>
+            <h3>Creer un potager creole : par ou commencer ?</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </article>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-inner">
+    <img src="images/logo-jardiland.svg" alt="Jardiland" class="footer-logo">
+    <div class="footer-links">
+      <a href="#">Mentions legales</a>
+      <a href="#">Politique de confidentialite</a>
+      <a href="#">CGV</a>
+    </div>
+    <p class="footer-text">&copy; 2026 Jardiland Guadeloupe — Tous droits reserves &middot; Creation du site : <a href="https://katchak-agency.fr" target="_blank">Katchak Digital Agency</a></p>
+  </div>
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+// Mobile dropdown toggle
+navLinks.querySelectorAll('.has-dropdown > a').forEach(a => {
+  a.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      a.parentElement.classList.toggle('open');
+    }
+  });
+});
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
