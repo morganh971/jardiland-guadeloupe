@@ -495,6 +495,28 @@ section { padding: 100px 24px; position: relative; }
   opacity: 0.7;
 }
 .feature-card p { color: var(--gray); font-size: 0.93rem; line-height: 1.6; }
+/* Carte cliquable (<a class="feature-card feature-card-link">) */
+a.feature-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+a.feature-card-link h3 { color: var(--dark); transition: color 0.3s; }
+a.feature-card-link:hover h3 { color: var(--orange); }
+a.feature-card-link .feature-card-arrow {
+  margin-top: auto;
+  padding-top: 18px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--orange);
+  align-self: flex-end;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+a.feature-card-link:hover .feature-card-arrow { transform: translateX(6px); }
+.feature-card-arrow { display: none; } /* hidden on non-link cards */
+a.feature-card-link .feature-card-arrow { display: inline-block; }
 
 /* ---------- SPECIES CARDS (espèces végétales / fruits / animaux) ---------- */
 .species-grid {
