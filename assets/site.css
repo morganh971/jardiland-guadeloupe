@@ -1378,6 +1378,37 @@ footer.site-footer::before {
 }
 
 /* ============================================================
+   MEDIA BANNER (bandeau image inline entre sections)
+   ============================================================ */
+.media-banner { padding: 36px 20px 12px; background: #fff; }
+.media-banner-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.media-banner img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 22px;
+  display: block;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+.media-banner-caption {
+  text-align: center;
+  font-style: italic;
+  color: var(--gray);
+  margin: 18px auto 0;
+  font-size: 0.95rem;
+  max-width: 680px;
+  line-height: 1.55;
+}
+@media (max-width: 768px) {
+  .media-banner { padding: 20px 16px 4px; }
+  .media-banner img { height: 280px; border-radius: 16px; }
+  .media-banner-caption { font-size: 0.9rem; margin-top: 14px; }
+}
+
+/* ============================================================
    LEGAL PAGES (mentions légales, politique cookies, CGU)
    ============================================================ */
 .legal-hero {
