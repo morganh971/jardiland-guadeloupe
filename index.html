@@ -1612,6 +1612,63 @@ footer {
   </div>
 </section>
 
+<!-- ========== GUIDE JARDIN CRÉOLE ========== -->
+<style>
+.guide-feature { padding: 96px 0; background: linear-gradient(135deg, var(--cream) 0%, var(--offwhite) 100%); overflow: hidden; }
+.guide-feature-inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 0.85fr 1fr; gap: 64px; align-items: center; }
+.guide-feature-visual { position: relative; display: flex; justify-content: center; }
+.guide-feature-visual img { width: 100%; max-width: 360px; border-radius: 12px; box-shadow: var(--shadow-lg); transform: rotate(-3deg); transition: transform var(--transition); }
+.guide-feature-visual img:hover { transform: rotate(0deg) scale(1.02); }
+.guide-feature-visual::before { content: ''; position: absolute; width: 200px; height: 200px; background: radial-gradient(circle, rgba(227,82,5,0.12), transparent 70%); top: -30px; left: -20px; z-index: 0; }
+.guide-feature-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--orange); color: var(--white); font-family: var(--font-brand); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 16px; border-radius: 50px; margin-bottom: 20px; }
+.guide-feature h2 { font-family: var(--font-brand); font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 900; color: var(--dark); line-height: 1.1; margin-bottom: 18px; }
+.guide-feature h2 .accent { color: var(--green); }
+.guide-feature > .guide-feature-inner p.guide-lead { font-size: 1.08rem; line-height: 1.75; color: var(--gray); margin-bottom: 28px; max-width: 520px; }
+.guide-points { list-style: none; padding: 0; margin: 0 0 32px; display: grid; gap: 14px; }
+.guide-points li { display: flex; align-items: center; gap: 12px; font-size: 1rem; color: var(--dark-soft); font-weight: 500; }
+.guide-points li svg { flex-shrink: 0; width: 26px; height: 26px; padding: 5px; background: var(--green-soft); border-radius: 8px; }
+.guide-feature-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.guide-feature-actions .guide-meta { font-size: 0.85rem; color: var(--gray-light); }
+@media (max-width: 880px) {
+  .guide-feature { padding: 64px 0; }
+  .guide-feature-inner { grid-template-columns: 1fr; gap: 40px; }
+  .guide-feature-visual { order: -1; }
+  .guide-feature-visual img { max-width: 260px; }
+}
+</style>
+<section class="guide-feature" id="guide-creole">
+  <div class="guide-feature-inner">
+    <div class="guide-feature-visual reveal">
+      <a href="assets/guide-jardin-creole.pdf" target="_blank" rel="noopener" aria-label="Ouvrir le guide Jardin Créole">
+        <img src="images/guide-jardin-creole-cover.jpg" alt="Couverture du guide Créer son jardin créole — Jardiland Guadeloupe">
+      </a>
+    </div>
+    <div class="guide-feature-text reveal reveal-delay-2">
+      <span class="guide-feature-badge">★ Nouveau · Guide gratuit</span>
+      <h2>Créer son <span class="accent">jardin créole</span></h2>
+      <p class="guide-lead">Notre guide pratique pour cultiver un jardin utile, parfumé et vivant, adapté au climat tropical de la Guadeloupe. Les plantes essentielles pour bien démarrer, même sur un petit espace.</p>
+      <ul class="guide-points">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3d7c47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 3 3 5 3 8a3 3 0 11-6 0c0-3 1.5-5 3-8z"/></svg>
+          Les légumes faciles : tomate, laitue, piment végétarien
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3d7c47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
+          Les aromates qui parfument vos plats : persil, basilic, thym
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3d7c47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6M12 2v5M7 7h10l1.5 11a3 3 0 01-3 3.5H8.5a3 3 0 01-3-3.5z"/></svg>
+          Les plantes bien-être : gingembre, citronnelle, thé pays
+        </li>
+      </ul>
+      <div class="guide-feature-actions">
+        <a href="assets/guide-jardin-creole.pdf" target="_blank" rel="noopener" download class="btn btn-primary btn-lg">Télécharger le guide (PDF)</a>
+        <span class="guide-meta">Gratuit · 6 pages · 1,6 Mo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ========== TEMOIGNAGES ========== -->
 <section class="temoignages">
   <div class="container">
